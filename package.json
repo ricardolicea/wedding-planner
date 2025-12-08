@@ -16,11 +16,11 @@
     "lint:web": "npm run lint --workspace web"
   },
   "devDependencies": {
-    "@nestjs/cli": "^11.0.14",
     "@types/axios": "^0.9.36",
     "concurrently": "^9.2.1"
   },
   "dependencies": {
+    "@nestjs/cli": "^11.0.14",
     "@nestjs/config": "^4.0.2",
     "api": "^0.0.1",
     "axios": "^1.13.2",
