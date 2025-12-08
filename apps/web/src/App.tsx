@@ -1,35 +1,53 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from 'react';
+import { AppLayout } from './layout/AppLayout';
+import { DashboardPage } from './pages/Dashboard';
+import { GuestsPage } from './pages/GuestPage';
+import { CreateUserPage } from './pages/CreateUserPage';
+import { AuthPage } from './pages/AuthPage';
+import { useAuth } from './contexts/AuthContext';
 
-function App() {
-  const [count, setCount] = useState(0)
+export function App() {
+  const { user, loading, signOut } = useAuth();
+  const [activePage, setActivePage] = useState('dashboard');
+
+  if (loading) {
+    return <div>Cargando...</div>;
+  }
+
+  if (!user) {
+    return <AuthPage />;
+  }
+
+  const isAdmin = user.email === 'ricardo.liceamata@gmail.com';
+
+  let content = null;
+  switch (activePage) {
+    case 'guests':
+      content = <GuestsPage />;
+      break;
+    case 'admin-users':
+      content = <CreateUserPage />;
+      break;
+    case 'dashboard':
+    default:
+      content = <DashboardPage />;
+  }
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <AppLayout
+      activeNavId={activePage}
+      onSelectNav={id => {
+        if (id === 'logout') {
+          signOut();
+          return;
+        }
+        setActivePage(id);
+      }}
+      isAdmin={isAdmin}
+    >
+      {content}
+    </AppLayout>
+  );
 }
 
-export default App
+export default App;

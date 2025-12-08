@@ -8,7 +8,6 @@ export class GuestsController {
 
     @Get()
     findAll(@Param('weddingId') weddingId: string) {
-        console.log('weddingId', weddingId);
         return this.guestsService.findAllGuestsByWedding(weddingId);
     }
     @Post()
