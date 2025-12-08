@@ -107,4 +107,40 @@ export class GuestsService {
     }
     return data
   }
+
+  async editGuestForWedding(
+    weddingId: string,
+    guestId: string,
+    body: CreateGuestDto,
+  ): Promise<void> {
+        const client = this.supabase.getClient();
+
+        console.log('GuestsService.editGuestForWedding called with:', {
+          weddingId,
+          guestId,
+          body,
+        });
+
+    const { data, error } = await client
+      .from('guests')
+      .update({
+        first_name: body.firstname,
+        last_name: body.lastname ?? null,
+        email: body.email ?? null,
+        phone: body.phone ?? null,
+        relation: body.relation ?? null,
+        has_plus_one: body.hasPlusOne ?? false,
+        notes: body.notes ?? null,
+        dietary_notes: body.dietaryNotes ?? null,
+      })
+      .eq('wedding_id', weddingId)
+      .eq('id', guestId)
+      .select('*')
+      .single();
+
+    if (error) {
+      throw new Error(`Error editing guest: ${error.message}`);
+    }
+    return data
+  } 
 }

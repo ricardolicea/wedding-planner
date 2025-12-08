@@ -17,4 +17,15 @@ export class GuestsController {
     ) {
         return this.guestsService.createGuestForWedding(weddingId, body);
     }
+
+    @Post('/edit/:guestId')
+    editGuest(
+        @Param('weddingId') weddingId: string,
+        @Param('guestId') guestId: string,
+        @Body() body: CreateGuestDto,
+    ) {
+        console.log('Editing guest:', guestId, 'for wedding:', weddingId);
+        console.log('With body:', body);
+        return this.guestsService.editGuestForWedding(weddingId, guestId, body);
+    }
 }

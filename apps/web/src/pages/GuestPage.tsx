@@ -5,7 +5,6 @@ import {
   Card,
   CardContent,
   Chip,
-  Grid,
   TextField,
   Typography,
   Table,
@@ -16,6 +15,7 @@ import {
   Stack,
   Tab,
 } from '@mui/material';
+import { Grid } from '@mui/material';
 
 import GuestsModal from '../components/Modal';
 import { useGuests } from '../contexts/GuestContext';
@@ -52,7 +52,6 @@ export function GuestsPage() {
     loadGuests();
   }
 
-  console.log('GuestsPage guests:', guests);
   return (
     <Box>
       {/* Header */}
@@ -67,7 +66,6 @@ export function GuestsPage() {
       <GuestsModal open={openModal} onClose={() => handleModal(false)} />
 
       <Grid container spacing={0}>
-        <Grid item xs={12}>
           <Card elevation={0} sx={{ borderRadius: 3, border: '1px solid #e7dcd2', width: '100%' }}>
             <CardContent>
               <Box display="flex" justifyContent="space-between" alignItems="center" mb={2}>
@@ -128,7 +126,6 @@ export function GuestsPage() {
               )}
             </CardContent>
           </Card>
-        </Grid>
       </Grid>
     </Box>
   );

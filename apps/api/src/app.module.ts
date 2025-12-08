@@ -9,9 +9,25 @@ import { WeddingsModule } from './weddings/weddings.module';
 
 
 @Module({
-  imports: [SupabaseModule, ConfigModule.forRoot({
-      isGlobal: true, // <-- 🔥 Carga .env automáticamente
-    }), GuestsModule, AdminModule, WeddingsModule],
+  imports: [
+    SupabaseModule,
+    ConfigModule.forRoot({
+      isGlobal: true,
+      envFilePath: (() => {
+        switch (process.env.NODE_ENV) {
+          case 'production':
+            return '.env.production.local';
+          case 'development':
+            return '.env.development.local';
+          default:
+            return '.env';
+        }
+      })(),
+    }),
+    GuestsModule,
+    AdminModule,
+    WeddingsModule
+  ],
   controllers: [AppController],
   providers: [AppService],
 })

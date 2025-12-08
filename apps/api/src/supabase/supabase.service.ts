@@ -6,19 +6,20 @@ export class SupabaseService {
   private client: SupabaseClient;
 
   constructor() {
-    this.client = createClient(
-      process.env.SUPABASE_URL!,
-      process.env.SUPABASE_SERVICE_ROLE_KEY!, // o ANON KEY para lectura
-    );
-    // TEMPORAL: poner al final del constructor SOLO para probar
+    const url = process.env.SUPABASE_URL;
+    const serviceRoleKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
 
-    (async () => {
-      const { data, error } = await this.client
-        .from('weddings')
-        .select('*')
-        .limit(1);
+    if (!url || !serviceRoleKey) {
+      console.error('SUPABASE_URL or SUPABASE_SERVICE_ROLE_KEY missing', {
+        url,
+        hasKey: !!serviceRoleKey,
+      });
+      throw new Error('Missing Supabase env vars');
+    }
 
-    })();
+    this.client = createClient(url, serviceRoleKey, {
+      auth: { autoRefreshToken: false, persistSession: false },
+    });
   }
 
   getClient() {
