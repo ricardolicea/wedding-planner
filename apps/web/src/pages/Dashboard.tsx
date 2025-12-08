@@ -9,7 +9,6 @@ import {
   Grid,
 } from '@mui/material';
 import { useGuests } from '../contexts/GuestContext';
-import imageBrindis from '../assets/image-brindis.jpeg';
 
 export function DashboardPage() {
   // Más adelante esto vendrá de tu API
@@ -20,18 +19,11 @@ export function DashboardPage() {
   const pendingGuests = guests.filter(
     (g) => !g.rsvpStatus || g.rsvpStatus.toLowerCase() === 'pending',
   ).length;
-  const distinctListTypes = Array.from(new Set(guests.map((g) => g.listtype).filter(Boolean)));
 
   const distinctListInvitedBy = Array.from(new Set(guests.map((g) => g.invitedBy).filter(Boolean)));
-  const tasksDone = 24;
-  const tasksTotal = 60;
 
-  const budgetTotal = 250_000;
-  const budgetSpent = 80_000;
 
-  const progressTasks = (tasksDone / tasksTotal) * 100;
   const progressGuests = (confirmedGuests / totalGuests) * 100;
-  const progressBudget = (budgetSpent / budgetTotal) * 100;
 
   return (
     <Box>

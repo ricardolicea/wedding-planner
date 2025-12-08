@@ -12,9 +12,7 @@ import {
   Toolbar,
   Typography,
   Avatar,
-  useTheme,
 } from '@mui/material';
-import MenuIcon from '@mui/icons-material/Menu';
 import HomeIcon from '@mui/icons-material/Home';
 import GroupIcon from '@mui/icons-material/Group';
 import ChecklistIcon from '@mui/icons-material/Checklist';
@@ -39,7 +37,6 @@ export function AppLayout({
   activeNavId = 'dashboard',
   isAdmin = false,
 }: AppLayoutProps) {
-  const theme = useTheme();
   const [mobileOpen, setMobileOpen] = useState(false);
 
   const handleDrawerToggle = () => {
