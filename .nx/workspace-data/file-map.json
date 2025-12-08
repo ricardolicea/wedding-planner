@@ -184,6 +184,51 @@
           "hash": "16225914092815047172"
         }
       ],
+      "prismadb": [
+        {
+          "file": "apps/prismadb/.gitignore",
+          "hash": "11424931467845557677"
+        },
+        {
+          "file": "apps/prismadb/package.json",
+          "hash": "5946041540169606590",
+          "deps": [
+            "npm:@types/node",
+            "npm:dotenv",
+            "npm:prisma@5.22.0",
+            "npm:@prisma/client@5.22.0",
+            "npm:pg"
+          ]
+        },
+        {
+          "file": "apps/prismadb/prisma/dev.db",
+          "hash": "14028793277134898007"
+        },
+        {
+          "file": "apps/prismadb/prisma/dev.db-journal",
+          "hash": "3246952544405801788"
+        },
+        {
+          "file": "apps/prismadb/prisma/migrations/20251202183412_first_prisma_migration/migration.sql",
+          "hash": "14758621558831232880"
+        },
+        {
+          "file": "apps/prismadb/prisma/migrations/migration_lock.toml",
+          "hash": "10997593172930738585"
+        },
+        {
+          "file": "apps/prismadb/prisma/schema.prisma",
+          "hash": "9362095696505819767"
+        },
+        {
+          "file": "apps/prismadb/test-connection.js",
+          "hash": "16887732765083365534"
+        },
+        {
+          "file": "apps/prismadb/tsconfig.json",
+          "hash": "10307285772026314218"
+        }
+      ],
       "api": [
         {
           "file": "apps/api/.env.example",
@@ -211,7 +256,7 @@
         },
         {
           "file": "apps/api/package.json",
-          "hash": "8735348414334198046",
+          "hash": "17911319462658645212",
           "deps": [
             "npm:@eslint/eslintrc",
             "npm:@eslint/js",
@@ -348,51 +393,6 @@
           "file": "apps/api/tsconfig.json",
           "hash": "13757859475919901779"
         }
-      ],
-      "prismadb": [
-        {
-          "file": "apps/prismadb/.gitignore",
-          "hash": "11424931467845557677"
-        },
-        {
-          "file": "apps/prismadb/package.json",
-          "hash": "5946041540169606590",
-          "deps": [
-            "npm:@types/node",
-            "npm:dotenv",
-            "npm:prisma@5.22.0",
-            "npm:@prisma/client@5.22.0",
-            "npm:pg"
-          ]
-        },
-        {
-          "file": "apps/prismadb/prisma/dev.db",
-          "hash": "14028793277134898007"
-        },
-        {
-          "file": "apps/prismadb/prisma/dev.db-journal",
-          "hash": "3246952544405801788"
-        },
-        {
-          "file": "apps/prismadb/prisma/migrations/20251202183412_first_prisma_migration/migration.sql",
-          "hash": "14758621558831232880"
-        },
-        {
-          "file": "apps/prismadb/prisma/migrations/migration_lock.toml",
-          "hash": "10997593172930738585"
-        },
-        {
-          "file": "apps/prismadb/prisma/schema.prisma",
-          "hash": "9362095696505819767"
-        },
-        {
-          "file": "apps/prismadb/test-connection.js",
-          "hash": "16887732765083365534"
-        },
-        {
-          "file": "apps/prismadb/tsconfig.json",
-          "hash": "10307285772026314218"
-        }
       ]
     },
     "nonProjectFiles": [
@@ -414,7 +414,7 @@
       },
       {
         "file": "package-lock.json",
-        "hash": "2692715650979829557"
+        "hash": "3413308050621445007"
       },
       {
         "file": "package.json",

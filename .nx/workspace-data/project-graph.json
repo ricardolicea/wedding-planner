@@ -80,7 +80,7 @@
               "script": "build"
             },
             "metadata": {
-              "scriptContent": "node ../../node_modules/@nestjs/cli/bin/nest.js build",
+              "scriptContent": "nest build",
               "runCommand": "npm run build"
             },
             "configurations": {},
@@ -26183,5 +26183,5 @@
   },
   "version": "6.0",
   "errors": [],
-  "computedAt": 1765169522968
+  "computedAt": 1765170205664
 }
