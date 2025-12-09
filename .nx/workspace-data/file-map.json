@@ -1,0 +1,426 @@
+{
+  "version": "6.0",
+  "nxVersion": "22.1.3",
+  "pathMappings": {},
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "projectFileMap": {
+      "api": [
+        {
+          "file": "apps/api/.env.example",
+          "hash": "13060503935183974031"
+        },
+        {
+          "file": "apps/api/.gitignore",
+          "hash": "12634402967133909834"
+        },
+        {
+          "file": "apps/api/.prettierrc",
+          "hash": "9555875142989992828"
+        },
+        {
+          "file": "apps/api/README.md",
+          "hash": "13408464382999289361"
+        },
+        {
+          "file": "apps/api/eslint.config.mjs",
+          "hash": "3852693644638777996"
+        },
+        {
+          "file": "apps/api/nest-cli.json",
+          "hash": "789240945379598733"
+        },
+        {
+          "file": "apps/api/package.json",
+          "hash": "17911319462658645212",
+          "deps": [
+            "npm:@eslint/eslintrc",
+            "npm:@eslint/js",
+            "npm:@nestjs/cli",
+            "npm:@nestjs/schematics",
+            "npm:@nestjs/testing",
+            "npm:@types/express",
+            "npm:@types/jest",
+            "npm:@types/node",
+            "npm:@types/supertest",
+            "npm:eslint",
+            "npm:eslint-config-prettier",
+            "npm:eslint-plugin-prettier",
+            "npm:globals",
+            "npm:jest",
+            "npm:prettier",
+            "npm:source-map-support",
+            "npm:supertest",
+            "npm:ts-jest",
+            "npm:ts-loader",
+            "npm:ts-node",
+            "npm:tsconfig-paths",
+            "npm:typescript",
+            "npm:typescript-eslint",
+            "npm:@nestjs/common",
+            "npm:@nestjs/core",
+            "npm:@nestjs/platform-express",
+            "npm:@supabase/supabase-js",
+            "npm:reflect-metadata",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "apps/api/src/admin/admin.controller.ts",
+          "hash": "14974419337042563621"
+        },
+        {
+          "file": "apps/api/src/admin/admin.module.ts",
+          "hash": "5661653672156136313"
+        },
+        {
+          "file": "apps/api/src/app.controller.spec.ts",
+          "hash": "2727664763654384995"
+        },
+        {
+          "file": "apps/api/src/app.controller.ts",
+          "hash": "4552329938751326480"
+        },
+        {
+          "file": "apps/api/src/app.module.ts",
+          "hash": "8836021555280044417"
+        },
+        {
+          "file": "apps/api/src/app.service.ts",
+          "hash": "16892833931858030153"
+        },
+        {
+          "file": "apps/api/src/data/guests.json",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/api/src/guests/guests.controller.spec.ts",
+          "hash": "1279783933075713240"
+        },
+        {
+          "file": "apps/api/src/guests/guests.controller.ts",
+          "hash": "7007882109704236311"
+        },
+        {
+          "file": "apps/api/src/guests/guests.module.ts",
+          "hash": "10294804857388062394"
+        },
+        {
+          "file": "apps/api/src/guests/guests.service.spec.ts",
+          "hash": "9669874595384277126"
+        },
+        {
+          "file": "apps/api/src/guests/guests.service.ts",
+          "hash": "9755968671241007071"
+        },
+        {
+          "file": "apps/api/src/main.ts",
+          "hash": "14022905407326655936"
+        },
+        {
+          "file": "apps/api/src/supabase/supabase-admin.service.ts",
+          "hash": "16207840345907205245"
+        },
+        {
+          "file": "apps/api/src/supabase/supabase.module.ts",
+          "hash": "7330462215775173699"
+        },
+        {
+          "file": "apps/api/src/supabase/supabase.service.spec.ts",
+          "hash": "2459833263488416917"
+        },
+        {
+          "file": "apps/api/src/supabase/supabase.service.ts",
+          "hash": "3986024696628338288"
+        },
+        {
+          "file": "apps/api/src/weddings/weddings.controller.spec.ts",
+          "hash": "8523741980134927080"
+        },
+        {
+          "file": "apps/api/src/weddings/weddings.controller.ts",
+          "hash": "1428275310098110206"
+        },
+        {
+          "file": "apps/api/src/weddings/weddings.module.ts",
+          "hash": "477298110335220906"
+        },
+        {
+          "file": "apps/api/src/weddings/weddings.service.spec.ts",
+          "hash": "8181667416603525071"
+        },
+        {
+          "file": "apps/api/src/weddings/weddings.service.ts",
+          "hash": "8761124062655076157"
+        },
+        {
+          "file": "apps/api/test/app.e2e-spec.ts",
+          "hash": "2765043824989823198"
+        },
+        {
+          "file": "apps/api/test/jest-e2e.json",
+          "hash": "7570273541430074424"
+        },
+        {
+          "file": "apps/api/tsconfig.build.json",
+          "hash": "276845246908739715"
+        },
+        {
+          "file": "apps/api/tsconfig.json",
+          "hash": "13757859475919901779"
+        }
+      ],
+      "web": [
+        {
+          "file": "apps/web/.env.example",
+          "hash": "1254456578006850728"
+        },
+        {
+          "file": "apps/web/.gitignore",
+          "hash": "13046175384202504187"
+        },
+        {
+          "file": "apps/web/README.md",
+          "hash": "6529887400882112953"
+        },
+        {
+          "file": "apps/web/eslint.config.js",
+          "hash": "16942999842498204"
+        },
+        {
+          "file": "apps/web/index.html",
+          "hash": "12552562825985743627"
+        },
+        {
+          "file": "apps/web/package.json",
+          "hash": "12111265010159450029",
+          "deps": [
+            "npm:@eslint/js",
+            "npm:@tailwindcss/postcss",
+            "npm:@types/node@24.10.1",
+            "npm:@types/react",
+            "npm:@types/react-dom",
+            "npm:@vitejs/plugin-react",
+            "npm:autoprefixer",
+            "npm:eslint",
+            "npm:eslint-plugin-react-hooks",
+            "npm:eslint-plugin-react-refresh",
+            "npm:globals",
+            "npm:postcss",
+            "npm:tailwindcss",
+            "npm:typescript",
+            "npm:typescript-eslint",
+            "npm:vite",
+            "npm:@emotion/react",
+            "npm:@emotion/styled",
+            "npm:@mui/icons-material",
+            "npm:@mui/material",
+            "npm:@supabase/supabase-js",
+            "npm:react",
+            "npm:react-dom"
+          ]
+        },
+        {
+          "file": "apps/web/postcss.config.js",
+          "hash": "2989106593385399810"
+        },
+        {
+          "file": "apps/web/public/vite.svg",
+          "hash": "16046085400642193116"
+        },
+        {
+          "file": "apps/web/src/App.css",
+          "hash": "3739391659270974612"
+        },
+        {
+          "file": "apps/web/src/App.tsx",
+          "hash": "10743772148800292186"
+        },
+        {
+          "file": "apps/web/src/api/Guest.ts",
+          "hash": "8787771692818794339"
+        },
+        {
+          "file": "apps/web/src/api/Wedding.ts",
+          "hash": "9840497936745775668"
+        },
+        {
+          "file": "apps/web/src/api/adminApi.ts",
+          "hash": "3728665875197967310"
+        },
+        {
+          "file": "apps/web/src/api/createGuests.ts",
+          "hash": "2228184270241896327"
+        },
+        {
+          "file": "apps/web/src/api/getGuests.ts",
+          "hash": "17853878605023959141"
+        },
+        {
+          "file": "apps/web/src/api/getWeddings.ts",
+          "hash": "16567174684025315883"
+        },
+        {
+          "file": "apps/web/src/api/httpClient.ts",
+          "hash": "16869608217906531145"
+        },
+        {
+          "file": "apps/web/src/assets/image-brindis.jpeg",
+          "hash": "8204437860445087494"
+        },
+        {
+          "file": "apps/web/src/assets/image-waliking.jpeg",
+          "hash": "7604456464498000975"
+        },
+        {
+          "file": "apps/web/src/assets/react.svg",
+          "hash": "16069471864800376455"
+        },
+        {
+          "file": "apps/web/src/components/Modal.tsx",
+          "hash": "2668156209898124788"
+        },
+        {
+          "file": "apps/web/src/contexts/AuthContext.tsx",
+          "hash": "7147948436650169053"
+        },
+        {
+          "file": "apps/web/src/contexts/GuestContext.tsx",
+          "hash": "11072668188097554557"
+        },
+        {
+          "file": "apps/web/src/index.css",
+          "hash": "7073853273774893834"
+        },
+        {
+          "file": "apps/web/src/layout/AppLayout.tsx",
+          "hash": "9185504908807931370"
+        },
+        {
+          "file": "apps/web/src/layout/Sidebar.tsx",
+          "hash": "28969888314531469"
+        },
+        {
+          "file": "apps/web/src/layout/Topbar.tsx",
+          "hash": "342709615666386332"
+        },
+        {
+          "file": "apps/web/src/lib/supabaseClient.ts",
+          "hash": "7696121038631863404"
+        },
+        {
+          "file": "apps/web/src/main.tsx",
+          "hash": "10315165562480784588"
+        },
+        {
+          "file": "apps/web/src/pages/AuthPage.tsx",
+          "hash": "2192177830776631229"
+        },
+        {
+          "file": "apps/web/src/pages/CreateUserPage.tsx",
+          "hash": "8511507245278712263"
+        },
+        {
+          "file": "apps/web/src/pages/Dashboard.tsx",
+          "hash": "2812169467289780564"
+        },
+        {
+          "file": "apps/web/src/pages/GuestPage.tsx",
+          "hash": "4038627907996568719"
+        },
+        {
+          "file": "apps/web/tailwind.config.js",
+          "hash": "1136070076821179571"
+        },
+        {
+          "file": "apps/web/tsconfig.app.json",
+          "hash": "5465718486149434459"
+        },
+        {
+          "file": "apps/web/tsconfig.json",
+          "hash": "2365188958523842680"
+        },
+        {
+          "file": "apps/web/tsconfig.node.json",
+          "hash": "11862655124761714159"
+        },
+        {
+          "file": "apps/web/vite.config.ts",
+          "hash": "16225914092815047172"
+        }
+      ],
+      "prismadb": [
+        {
+          "file": "apps/prismadb/.gitignore",
+          "hash": "11424931467845557677"
+        },
+        {
+          "file": "apps/prismadb/package.json",
+          "hash": "5946041540169606590",
+          "deps": [
+            "npm:@types/node",
+            "npm:dotenv",
+            "npm:prisma@5.22.0",
+            "npm:@prisma/client@5.22.0",
+            "npm:pg"
+          ]
+        },
+        {
+          "file": "apps/prismadb/prisma/dev.db",
+          "hash": "14028793277134898007"
+        },
+        {
+          "file": "apps/prismadb/prisma/dev.db-journal",
+          "hash": "3246952544405801788"
+        },
+        {
+          "file": "apps/prismadb/prisma/migrations/20251202183412_first_prisma_migration/migration.sql",
+          "hash": "14758621558831232880"
+        },
+        {
+          "file": "apps/prismadb/prisma/migrations/migration_lock.toml",
+          "hash": "10997593172930738585"
+        },
+        {
+          "file": "apps/prismadb/prisma/schema.prisma",
+          "hash": "9362095696505819767"
+        },
+        {
+          "file": "apps/prismadb/test-connection.js",
+          "hash": "16887732765083365534"
+        },
+        {
+          "file": "apps/prismadb/tsconfig.json",
+          "hash": "10307285772026314218"
+        }
+      ]
+    },
+    "nonProjectFiles": [
+      {
+        "file": ".editorconfig",
+        "hash": "5784436347579547078"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "2599929986582576151"
+      },
+      {
+        "file": ".prettierrc",
+        "hash": "2431873673864141239"
+      },
+      {
+        "file": "apps/indext.ts",
+        "hash": "14063648577057935293"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "13609329950306142657"
+      },
+      {
+        "file": "package.json",
+        "hash": "6108357314449303126"
+      }
+    ]
+  },
+  "externalNodesHash": "11454722488689590551"
+}

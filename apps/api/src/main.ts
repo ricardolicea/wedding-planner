@@ -8,7 +8,7 @@ async function bootstrap() {
   app.enableCors({
     origin: [
     'http://localhost:5173',           // dev front
-    'https://TU-DOMINIO-FRONT.vercel.app', // prod front, después lo ajustamos
+    'https://wedding-planner-web-177d.vercel.app', // prod front, después lo ajustamos
   ],
   });
 
