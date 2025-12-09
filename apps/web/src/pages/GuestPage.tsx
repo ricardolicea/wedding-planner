@@ -16,8 +16,10 @@ import { Grid } from '@mui/material';
 
 import GuestsModal from '../components/Modal';
 import { useGuests } from '../contexts/GuestContext';
+import { useAuth } from '../contexts/AuthContext';
 
 export function GuestsPage() {
+  const {weddingId} = useAuth();
   const guestsContext = useGuests();
   const guests = guestsContext?.guests ?? [];
   const loading = guestsContext?.loading ?? false;
@@ -60,7 +62,7 @@ export function GuestsPage() {
           Administra la lista de invitados, confirma asistencia y registra notas especiales.
         </Typography>
       </Box>
-      <GuestsModal open={openModal} onClose={() => handleModal(false)} />
+      <GuestsModal open={openModal} onClose={() => handleModal(false)} weddingId={weddingId!} />
 
       <Grid container spacing={0}>
           <Card elevation={0} sx={{ borderRadius: 3, border: '1px solid #e7dcd2', width: '100%' }}>

@@ -21,7 +21,7 @@ import BusinessIcon from '@mui/icons-material/Business';
 import EventIcon from '@mui/icons-material/Event';
 import AdminPanelSettingsIcon from '@mui/icons-material/AdminPanelSettings';
 import LogoutIcon from '@mui/icons-material/Logout';
-import imageBrindis from '../../public/image-brindis.jpeg'
+import imageBrindis from '/image-brindis.jpeg'
 const drawerWidth = 260;
 
 interface AppLayoutProps extends PropsWithChildren {

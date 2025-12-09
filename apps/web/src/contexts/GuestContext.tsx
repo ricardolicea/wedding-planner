@@ -38,7 +38,7 @@ export function GuestsProvider({ children }: any) {
   async function addGuest(payload: Guest) {
     if (!weddingId) return;
     try {
-      const newGuest = await createGuest(payload);
+      const newGuest = await createGuest(payload, weddingId);
       setGuests(prev => [...(prev || []), ...(Array.isArray(newGuest) ? newGuest : [newGuest])]);
     } catch (err: any) {
       setError('Error agregando invitado');

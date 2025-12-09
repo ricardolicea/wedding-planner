@@ -9,6 +9,7 @@ import { useAuth } from './contexts/AuthContext';
 export function App() {
   const { user, loading, signOut } = useAuth();
   const [activePage, setActivePage] = useState('dashboard');
+  console.log('Loading user:', loading);
 
   if (loading) {
     return <div>Cargando...</div>;

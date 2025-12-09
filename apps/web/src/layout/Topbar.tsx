@@ -1,4 +1,4 @@
-import imageBrindis from '../assets/image-brindis.jpeg';
+import imageBrindis from '/image-brindis.jpeg';
 export function TopBar() {
   console.log('imageBrindis', imageBrindis);
   return (

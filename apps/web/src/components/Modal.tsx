@@ -19,7 +19,7 @@ const style = {
   p: 4,
 };
 
-function GuestsModal({ open, onClose }: { open: boolean; onClose: () => void }) {
+function GuestsModal({ open, onClose, weddingId }: { open: boolean; onClose: () => void; weddingId: string }) {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [relation, setRelation] = useState('');
@@ -37,7 +37,7 @@ function GuestsModal({ open, onClose }: { open: boolean; onClose: () => void }) 
         name,
         email: email || undefined,
         relation: relation || undefined,
-      });
+      }, weddingId);
       setName('');
       setEmail('');
       setRelation('');
