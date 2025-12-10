@@ -4,13 +4,7 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 import { MenuItem, RadioGroup, FormControlLabel, FormLabel } from '@mui/material';
-import {
-  Card,
-  CardContent,
-  Radio,
-  Stack,
-  TextField,
-} from '@mui/material';
+import { Card, CardContent, Radio, Stack, TextField } from '@mui/material';
 import { useState } from 'react';
 import { createGuest } from '../api/createGuests';
 import type { Guest } from '../api/Guest';
@@ -74,6 +68,22 @@ function GuestsModal({
       console.error(err);
       setError(err.message ?? 'Error creando invitado');
     } finally {
+      setGuest({
+        id: '',
+        firstname: '',
+        lastname: '',
+        email: '',
+        phone: '',
+        relation: '',
+        invitedBy: '',
+        hasPlusOne: false,
+        rsvpStatus: 'pending',
+        notes: '',
+        dietaryNotes: '',
+        createdAt: '',
+        updatedAt: '',
+        listtype: '',
+      });
       setLoading(false);
       onClose();
     }
@@ -149,12 +159,14 @@ function GuestsModal({
                       setGuest(guest ? { ...guest, invitedBy: e.target.value } : null)
                     }
                   />
-                  
+
                   <FormLabel component="legend">¿Traerá acompañante?</FormLabel>
                   <RadioGroup
                     row
                     value={guest?.hasPlusOne ? 'yes' : 'no'}
-                    onChange={(e) => setGuest(guest ? { ...guest, hasPlusOne: e.target.value === 'yes' } : null)}
+                    onChange={(e) =>
+                      setGuest(guest ? { ...guest, hasPlusOne: e.target.value === 'yes' } : null)
+                    }
                   >
                     <FormControlLabel value="yes" control={<Radio />} label="Sí" />
                     <FormControlLabel value="no" control={<Radio />} label="No" />
@@ -193,7 +205,7 @@ function GuestsModal({
                         guest
                           ? {
                               ...guest,
-                              listtype: e.target.value as 'Lista A' | 'Lista B'
+                              listtype: e.target.value as 'Lista A' | 'Lista B',
                             }
                           : null,
                       )
@@ -204,7 +216,7 @@ function GuestsModal({
                     <MenuItem value="Lista A">Lista A</MenuItem>
                     <MenuItem value="Lista B">Lista B</MenuItem>
                   </TextField>
-                  
+
                   <TextField
                     size="small"
                     label="Notas especiales"
