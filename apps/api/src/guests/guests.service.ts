@@ -82,22 +82,27 @@ export class GuestsService {
 
   async createGuestForWedding(
     weddingId: string,
-    body: CreateGuestDto,
+    body: {guest: CreateGuestDto},
   ): Promise<void> {
         const client = this.supabase.getClient();
+        console.log('GuestsService.createGuestForWedding called with:', {
+          weddingId,
+          body,
+        });
+        const {guest} = body;
 
     const { data, error } = await client
       .from('guests')
       .insert({
         wedding_id: weddingId,
-        firstname: body.firstname,
-        lastname: body.lastname ?? null,
-        email: body.email ?? null,
-        phone: body.phone ?? null,
-        relation: body.relation ?? null,
-        has_plus_one: body.hasPlusOne ?? false,
-        notes: body.notes ?? null,
-        dietary_notes: body.dietaryNotes ?? null,
+        first_name: guest.firstname,
+        last_name: guest.lastname ?? null,
+        email: guest.email ?? null,
+        phone: guest.phone ?? null,
+        relation: guest.relation ?? null,
+        has_plus_one: guest.hasPlusOne ?? false,
+        notes: guest.notes ?? null,
+        dietary_notes: guest.dietaryNotes ?? null,
       })
       .select('*')
       .single();

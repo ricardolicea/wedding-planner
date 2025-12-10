@@ -11,11 +11,10 @@ import {
 import { useAuth } from '../contexts/AuthContext';
 
 export function AuthPage() {
-  const { signIn } = useAuth();
+  const { signIn, loading , setLoading} = useAuth();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState<string | null>(null);
-  const [loading, setLoading] = useState(false);
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
