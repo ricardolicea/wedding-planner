@@ -36,7 +36,7 @@ export function GuestsPage() {
     setOpenModal(flag);
     loadGuests();
   }
-
+  console.log('GuestsPage render', {guests, loading, error});
   return (
     <Box>
       {/* Header */}
@@ -60,7 +60,7 @@ export function GuestsPage() {
                 <Typography variant="body2" color="text.secondary">
                   Total: {guests.length}
                 </Typography>
-                <Button onClick={() => handleModal(true)}>Open modal</Button>
+                <Button onClick={() => handleModal(true)} sx={{ backgroundColor: '#9b8f86ff', '&:hover': { backgroundColor: '#6B4F3A' }, color: 'white' }}>Añadir Invitado</Button>
               </Box>
 
               {error ? (
@@ -119,7 +119,7 @@ export function GuestsPage() {
 function RsvpChip({ status }: { status: string }) {
   const normalized = status?.toLowerCase();
 
-  if (normalized === 'attending') {
+  if (normalized === 'accepted') {
     return <Chip label="Asistirá" size="small" color="success" />;
   }
   if (normalized === 'declined') {

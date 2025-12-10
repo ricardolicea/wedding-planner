@@ -4,24 +4,26 @@ import {
   CardContent,
   Typography,
   LinearProgress,
-  Stack,
-  Chip,
   Grid,
 } from '@mui/material';
 import { useGuests } from '../contexts/GuestContext';
+import workInProgressImage from '/work_in_progress.png'
+
 
 export function DashboardPage() {
   // Más adelante esto vendrá de tu API
   const guestsContext = useGuests();
   const guests = guestsContext?.guests ?? [];
-  const totalGuests = guests.length;
-  const confirmedGuests = guests.filter((g) => g.rsvpStatus?.toLowerCase() === 'attending').length;
+  const guestsLength = guests.length;
+  const totalPlusOnes = guests.reduce((sum, g) => sum + (g.hasPlusOne ? 1 : 0), 0);
+  const totalGuests = guestsLength + totalPlusOnes;
+
+  const confirmedGuests = guests.filter((g) => g.rsvpStatus?.toLowerCase() === 'accepted').length;
   const pendingGuests = guests.filter(
     (g) => !g.rsvpStatus || g.rsvpStatus.toLowerCase() === 'pending',
   ).length;
 
   const distinctListInvitedBy = Array.from(new Set(guests.map((g) => g.invitedBy).filter(Boolean)));
-
 
   const progressGuests = (confirmedGuests / totalGuests) * 100;
 
@@ -66,20 +68,26 @@ export function DashboardPage() {
 
         {distinctListInvitedBy.map((invitedBy) => (
           <Card elevation={0} sx={{ borderRadius: 3, border: '1px solid #e7dcd2' }} key={invitedBy}>
-          <CardContent>
-            <Typography variant="overline" color="text.secondary">
-              Invitado por {invitedBy}
-            </Typography>
-            <Typography variant="h5" sx={{ fontWeight: 600 }}>
-              {guests.filter(g => g.invitedBy === invitedBy).length} invitados
-            </Typography>
-            
-           
-          </CardContent>
-        </Card>
-
+            <CardContent>
+              <Typography variant="overline" color="text.secondary">
+                Invitado por {invitedBy}
+              </Typography>
+              <Typography variant="h5" sx={{ fontWeight: 600 }}>
+                {guests.filter((g) => g.invitedBy === invitedBy).length} invitados
+              </Typography>
+              <LinearProgress
+                variant="determinate"
+                value={(guests.filter((g) => g.invitedBy === invitedBy).length / totalGuests) * 100}
+                sx={{
+                  height: 8,
+                  borderRadius: 5,
+                  backgroundColor: '#f1e4da',
+                  '& .MuiLinearProgress-bar': { backgroundColor: '#C4A484' },
+                }}
+              />
+            </CardContent>
+          </Card>
         ))}
-
 
         {/* </Grid> */}
 
@@ -110,7 +118,7 @@ export function DashboardPage() {
         {/* </Grid> */}
 
         {/* <Grid item xs={12} md={4}> */}
-       {/*  <Card elevation={0} sx={{ borderRadius: 3, border: '1px solid #e7dcd2' }}>
+        {/*  <Card elevation={0} sx={{ borderRadius: 3, border: '1px solid #e7dcd2' }}>
           <CardContent>
             <Typography variant="overline" color="text.secondary">
               Tareas
@@ -147,12 +155,13 @@ export function DashboardPage() {
             <Typography variant="body2" color="text.secondary" mb={2}>
               Lo que viene pronto en la planeación.
             </Typography>
+            <img src={workInProgressImage} alt="Work in progress" />
 
-            <Stack spacing={1.5}>
+            {/* <Stack spacing={1.5}>
               <TaskRow title="Definir menú con el catering" due="Próxima semana" />
               <TaskRow title="Probar vestido y traje" due="En 2 semanas" />
               <TaskRow title="Enviar invitaciones formales" due="En 1 mes" />
-            </Stack>
+            </Stack> */}
           </CardContent>
         </Card>
         {/*  </Grid> */}
@@ -166,12 +175,13 @@ export function DashboardPage() {
             <Typography variant="body2" color="text.secondary" mb={2}>
               Estado general de los proveedores clave.
             </Typography>
+             <img src={workInProgressImage} alt="Work in progress" />
 
-            <Stack spacing={1.5}>
+            {/* <Stack spacing={1.5}>
               <VendorRow name="Salón / venue" status="Confirmado" />
               <VendorRow name="Fotografía y video" status="En cotización" />
               <VendorRow name="Música / DJ" status="Por definir" />
-            </Stack>
+            </Stack> */}
           </CardContent>
         </Card>
         {/* </Grid> */}
@@ -180,7 +190,7 @@ export function DashboardPage() {
   );
 }
 
-function TaskRow({ title, due }: { title: string; due: string }) {
+/* function TaskRow({ title, due }: { title: string; due: string }) {
   return (
     <Box
       sx={{
@@ -199,9 +209,9 @@ function TaskRow({ title, due }: { title: string; due: string }) {
       </Typography>
     </Box>
   );
-}
+} */
 
-function VendorRow({ name, status }: { name: string; status: string }) {
+/* function VendorRow({ name, status }: { name: string; status: string }) {
   const color =
     status === 'Confirmado' ? 'success' : status === 'En cotización' ? 'warning' : 'default';
 
@@ -222,3 +232,4 @@ function VendorRow({ name, status }: { name: string; status: string }) {
     </Box>
   );
 }
+ */

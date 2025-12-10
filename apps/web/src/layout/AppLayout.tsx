@@ -49,10 +49,10 @@ export function AppLayout({
     { id: 'tasks', label: 'Tareas', icon: <ChecklistIcon /> },
     { id: 'vendors', label: 'Proveedores', icon: <BusinessIcon /> },
     { id: 'events', label: 'Eventos', icon: <EventIcon /> },
-    { id: 'logout', label: 'Cerrar Sesión', icon: <LogoutIcon /> },
     ...(isAdmin
       ? [{ id: 'admin-users', label: 'Admin usuarios', icon: <AdminPanelSettingsIcon /> }]
       : []),
+    { id: 'logout', label: 'Cerrar Sesión', icon: <LogoutIcon /> },
   ];
 
   const drawer = (

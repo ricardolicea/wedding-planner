@@ -86,6 +86,11 @@ export class GuestsService {
         const client = this.supabase.getClient();
         const {guest} = body;
 
+        console.log('GuestsService.createGuestForWedding called with:', {
+          weddingId,
+          body,
+        });
+
     const { data, error } = await client
       .from('guests')
       .insert({

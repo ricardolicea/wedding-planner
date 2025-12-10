@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import imageBrindis from 'apps/web/src/assets/image-brindis.jpeg';
 const WEDDING_NAME = 'Ricardo & Sofy';
 const WEDDING_DATE = '21 Marzo 2026';
 
@@ -23,11 +22,11 @@ export function Sidebar() {
       <div className="px-6 pt-6 pb-5 border-b border-[#e2d5cb]/80">
         <div className="flex flex-col items-center gap-3">
           <div className="relative h-24 w-24 rounded-full overflow-hidden border-[3px] border-[#E8C5C8] bg-[#f4e7df] shadow-sm">
-            <img
+            {/* <img
               src={imageBrindis}
               alt="Ricardo y Sofy"
               className="h-full w-full object-cover"
-            />
+            /> */}
           </div>
           <div className="text-center">
             <div className="text-[10px] uppercase tracking-[0.25em] text-[#A09388] mb-1">

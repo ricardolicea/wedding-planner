@@ -191,8 +191,8 @@ function GuestsModal({
                     sx={{ mt: 1 }}
                   >
                     <MenuItem value="pending">Pendiente</MenuItem>
-                    <MenuItem value="assisting">Asistirá</MenuItem>
-                    <MenuItem value="not_assisting">No asistirá</MenuItem>
+                    <MenuItem value="accepted">Asistirá</MenuItem>
+                    <MenuItem value="declined">No asistirá</MenuItem>
                   </TextField>
 
                   <TextField
