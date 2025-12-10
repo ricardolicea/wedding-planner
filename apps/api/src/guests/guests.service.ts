@@ -17,7 +17,6 @@ export interface CreateGuestDto {
     invitedBy: string;
     listtype: string;
 }
-// apps/api/src/guests/guests.service.ts
 
 type GuestRow = {
   id: string;
@@ -28,7 +27,7 @@ type GuestRow = {
   phone: string;
   relation: string;
   invited_by: string;
-  listtype: string;
+  list_type: string;
   has_plus_one: boolean;
   rsvp_status: string;
   notes: string;
@@ -55,7 +54,7 @@ function mapGuestRowToDto(row: GuestRow): CreateGuestDto {
     createdAt: row.created_at,
     updatedAt: row.updated_at,
     invitedBy: row.invited_by,
-    listtype: row.listtype,
+    listtype: row.list_type,
   };
 }
 
@@ -85,10 +84,6 @@ export class GuestsService {
     body: {guest: CreateGuestDto},
   ): Promise<void> {
         const client = this.supabase.getClient();
-        console.log('GuestsService.createGuestForWedding called with:', {
-          weddingId,
-          body,
-        });
         const {guest} = body;
 
     const { data, error } = await client
@@ -101,8 +96,11 @@ export class GuestsService {
         phone: guest.phone ?? null,
         relation: guest.relation ?? null,
         has_plus_one: guest.hasPlusOne ?? false,
+        invited_by: guest.invitedBy ?? null,
+        rsvp_status: guest.rsvpStatus ?? 'PENDING',
         notes: guest.notes ?? null,
         dietary_notes: guest.dietaryNotes ?? null,
+        list_type: guest.listtype ?? null,
       })
       .select('*')
       .single();

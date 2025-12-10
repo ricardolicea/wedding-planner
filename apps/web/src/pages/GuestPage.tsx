@@ -26,20 +26,6 @@ export function GuestsPage() {
   const error = guestsContext?.error ?? null;
   const loadGuests = guestsContext?.loadGuests ?? (() => {});
  
-/*   async function loadGuests() {
-    try {
-      setLoading(true);
-      setError(null);
-      const data = await getGuests(weddingId!);
-      setGuests(data);
-    } catch (err: any) {
-      console.error(err);
-      setError(err.message ?? 'Error cargando invitados');
-    } finally {
-      setLoading(false);
-    }
-  } */
-
   useEffect(() => {
     loadGuests();
   }, []);

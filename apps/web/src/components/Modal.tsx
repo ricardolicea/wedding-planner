@@ -7,10 +7,8 @@ import { MenuItem, RadioGroup, FormControlLabel, FormLabel } from '@mui/material
 import {
   Card,
   CardContent,
-  Checkbox,
   Radio,
   Stack,
-  TextareaAutosize,
   TextField,
 } from '@mui/material';
 import { useState } from 'react';
@@ -59,7 +57,6 @@ function GuestsModal({
   });
 
   async function handleAddGuest(e: React.FormEvent) {
-    console.log('handleAddGuest guest', guest);
     e.preventDefault();
 
     try {
@@ -184,6 +181,28 @@ function GuestsModal({
                     <MenuItem value="pending">Pendiente</MenuItem>
                     <MenuItem value="assisting">Asistirá</MenuItem>
                     <MenuItem value="not_assisting">No asistirá</MenuItem>
+                  </TextField>
+
+                  <TextField
+                    select
+                    size="small"
+                    label="Tipo de Lista"
+                    value={guest!.listtype}
+                    onChange={(e) =>
+                      setGuest(
+                        guest
+                          ? {
+                              ...guest,
+                              listtype: e.target.value as 'Lista A' | 'Lista B'
+                            }
+                          : null,
+                      )
+                    }
+                    fullWidth
+                    sx={{ mt: 1 }}
+                  >
+                    <MenuItem value="Lista A">Lista A</MenuItem>
+                    <MenuItem value="Lista B">Lista B</MenuItem>
                   </TextField>
                   
                   <TextField
