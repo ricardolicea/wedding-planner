@@ -3,9 +3,17 @@ import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
-import { Card, CardContent, Stack, TextField } from '@mui/material';
+import { MenuItem, RadioGroup, FormControlLabel, FormLabel } from '@mui/material';
+import {
+  Card,
+  CardContent,
+  Radio,
+  Stack,
+  TextField,
+} from '@mui/material';
 import { useState } from 'react';
 import { createGuest } from '../api/createGuests';
+import type { Guest } from '../api/Guest';
 
 const style = {
   position: 'absolute',
@@ -19,28 +27,48 @@ const style = {
   p: 4,
 };
 
-function GuestsModal({ open, onClose, weddingId }: { open: boolean; onClose: () => void; weddingId: string }) {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [relation, setRelation] = useState('');
+function GuestsModal({
+  open,
+  onClose,
+  weddingId,
+}: {
+  open: boolean;
+  onClose: () => void;
+  weddingId: string;
+}) {
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
 
+  const [guest, setGuest] = useState<Guest | null>({
+    id: '',
+    firstname: '',
+    lastname: '',
+    email: '',
+    phone: '',
+    relation: '',
+    invitedBy: '',
+    hasPlusOne: false,
+    rsvpStatus: 'pending',
+    notes: '',
+    dietaryNotes: '',
+    createdAt: '',
+    updatedAt: '',
+    listtype: '',
+  });
+
   async function handleAddGuest(e: React.FormEvent) {
     e.preventDefault();
-    if (!name.trim()) return;
 
     try {
       setLoading(true);
       setError(null);
-      await createGuest({
-        name,
-        email: email || undefined,
-        relation: relation || undefined,
-      }, weddingId);
-      setName('');
-      setEmail('');
-      setRelation('');
+      await createGuest(
+        {
+          guest,
+        },
+        weddingId,
+      );
+
       //await loadGuests();
     } catch (err: any) {
       console.error(err);
@@ -74,22 +102,128 @@ function GuestsModal({ open, onClose, weddingId }: { open: boolean; onClose: () 
                   <TextField
                     size="small"
                     label="Nombre"
-                    value={name}
-                    onChange={(e) => setName(e.target.value)}
+                    value={guest!.firstname}
+                    onChange={(e) =>
+                      setGuest(guest ? { ...guest, firstname: e.target.value } : null)
+                    }
+                    required
+                  />
+                  <TextField
+                    size="small"
+                    label="Apellido"
+                    value={guest!.lastname}
+                    onChange={(e) =>
+                      setGuest(guest ? { ...guest, lastname: e.target.value } : null)
+                    }
                     required
                   />
                   <TextField
                     size="small"
                     label="Email"
                     type="email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
+                    value={guest!.email}
+                    onChange={(e) => setGuest(guest ? { ...guest, email: e.target.value } : null)}
+                  />
+                  <TextField
+                    size="small"
+                    label="Telefono"
+                    value={guest!.phone}
+                    onChange={(e) => setGuest(guest ? { ...guest, phone: e.target.value } : null)}
+                    required
                   />
                   <TextField
                     size="small"
                     label="Relación (familia, amigo, trabajo...)"
-                    value={relation}
-                    onChange={(e) => setRelation(e.target.value)}
+                    value={guest!.relation}
+                    onChange={(e) =>
+                      setGuest(guest ? { ...guest, relation: e.target.value } : null)
+                    }
+                    required
+                  />
+
+                  <TextField
+                    size="small"
+                    label="Invitado por (nombre del invitador)"
+                    value={guest!.invitedBy}
+                    onChange={(e) =>
+                      setGuest(guest ? { ...guest, invitedBy: e.target.value } : null)
+                    }
+                  />
+                  
+                  <FormLabel component="legend">¿Traerá acompañante?</FormLabel>
+                  <RadioGroup
+                    row
+                    value={guest?.hasPlusOne ? 'yes' : 'no'}
+                    onChange={(e) => setGuest(guest ? { ...guest, hasPlusOne: e.target.value === 'yes' } : null)}
+                  >
+                    <FormControlLabel value="yes" control={<Radio />} label="Sí" />
+                    <FormControlLabel value="no" control={<Radio />} label="No" />
+                  </RadioGroup>
+
+                  <TextField
+                    select
+                    size="small"
+                    label="RSVP"
+                    value={guest!.rsvpStatus}
+                    onChange={(e) =>
+                      setGuest(
+                        guest
+                          ? {
+                              ...guest,
+                              rsvpStatus: e.target.value as 'pending' | 'accepted' | 'declined',
+                            }
+                          : null,
+                      )
+                    }
+                    fullWidth
+                    sx={{ mt: 1 }}
+                  >
+                    <MenuItem value="pending">Pendiente</MenuItem>
+                    <MenuItem value="assisting">Asistirá</MenuItem>
+                    <MenuItem value="not_assisting">No asistirá</MenuItem>
+                  </TextField>
+
+                  <TextField
+                    select
+                    size="small"
+                    label="Tipo de Lista"
+                    value={guest!.listtype}
+                    onChange={(e) =>
+                      setGuest(
+                        guest
+                          ? {
+                              ...guest,
+                              listtype: e.target.value as 'Lista A' | 'Lista B'
+                            }
+                          : null,
+                      )
+                    }
+                    fullWidth
+                    sx={{ mt: 1 }}
+                  >
+                    <MenuItem value="Lista A">Lista A</MenuItem>
+                    <MenuItem value="Lista B">Lista B</MenuItem>
+                  </TextField>
+                  
+                  <TextField
+                    size="small"
+                    label="Notas especiales"
+                    value={guest!.notes}
+                    onChange={(e) => setGuest(guest ? { ...guest, notes: e.target.value } : null)}
+                    multiline
+                    minRows={2}
+                    fullWidth
+                  />
+                  <TextField
+                    size="small"
+                    label="Notas de dieta/alergias"
+                    value={guest!.dietaryNotes}
+                    onChange={(e) =>
+                      setGuest(guest ? { ...guest, dietaryNotes: e.target.value } : null)
+                    }
+                    multiline
+                    minRows={2}
+                    fullWidth
                   />
 
                   {error && (

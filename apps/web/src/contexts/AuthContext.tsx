@@ -12,6 +12,7 @@ interface AuthContextValue {
   user: User | null;
   session: Session | null;
   loading: boolean;
+  setLoading: (loading: boolean) => void;
   weddingId?: string | null;
   signIn: (email: string, password: string) => Promise<{ error?: any }>;
   signUp: (email: string, password: string) => Promise<{ error?: any }>;
@@ -108,6 +109,7 @@ export function AuthProvider({ children }: PropsWithChildren) {
     user,
     session,
     loading,
+    setLoading,
     weddingId,
     signIn,
     signUp,
