@@ -45,6 +45,7 @@ export function AppLayout({
   const navItems = [
     { id: 'dashboard', label: 'Dashboard', icon: <HomeIcon /> },
     { id: 'guests', label: 'Invitados', icon: <GroupIcon /> },
+    { id: 'venues', label: 'Salones', icon: <BusinessIcon /> },
     { id: 'budget', label: 'Presupuesto', icon: <PaymentsIcon /> },
     { id: 'tasks', label: 'Tareas', icon: <ChecklistIcon /> },
     { id: 'vendors', label: 'Proveedores', icon: <BusinessIcon /> },

@@ -9,6 +9,7 @@ import BudgetPage from './pages/BudgetPage';
 import TasksPage from './pages/TasksPage';
 import SuppliersPage from './pages/SuppliersPage';
 import EventsPage from './pages/EventsPage';
+import VenuesPage from './pages/VenuesPage';
 
 export function App() {
   const { user, loading, signOut } = useAuth();
@@ -34,6 +35,9 @@ export function App() {
       break;
     case 'dashboard':
       content = <DashboardPage />;
+      break;
+    case 'venues':
+      content = <VenuesPage />;
       break;
     case 'budget':
       content = <BudgetPage />;
