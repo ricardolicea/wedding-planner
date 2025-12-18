@@ -6,6 +6,7 @@ import { ConfigModule } from '@nestjs/config';
 import { GuestsModule } from './guests/guests.module';
 import { AdminModule } from './admin/admin.module';
 import { WeddingsModule } from './weddings/weddings.module';
+import { VenuesModule } from './venues/venues.module';
 
 
 @Module({
@@ -26,7 +27,8 @@ import { WeddingsModule } from './weddings/weddings.module';
     }),
     GuestsModule,
     AdminModule,
-    WeddingsModule
+    WeddingsModule,
+    VenuesModule
   ],
   controllers: [AppController],
   providers: [AppService],

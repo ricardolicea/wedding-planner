@@ -116,11 +116,6 @@ export class GuestsService {
   ): Promise<void> {
     const client = this.supabase.getClient();
 
-    console.log('GuestsService.editGuestForWedding called with:', {
-      weddingId,
-      guestId,
-      body,
-    });
 
     const { data, error } = await client
       .from('guests')
