@@ -138,8 +138,11 @@ export class GuestsService {
         phone: body.phone ?? null,
         relation: body.relation ?? null,
         has_plus_one: body.hasPlusOne ?? false,
+        rsvp_status: body.rsvpStatus ?? 'PENDING',
         notes: body.notes ?? null,
         dietary_notes: body.dietaryNotes ?? null,
+        invited_by: body.invitedBy ?? null,
+        list_type: body.listtype ?? null,
       })
       .eq('wedding_id', weddingId)
       .eq('id', guestId)

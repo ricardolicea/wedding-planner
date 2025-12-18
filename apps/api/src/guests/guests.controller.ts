@@ -1,4 +1,4 @@
-import { Controller, Get, Param, Post, Body } from '@nestjs/common';
+import { Controller, Get, Param, Post, Body, Put } from '@nestjs/common';
 import { GuestsService } from './guests.service';
 import type { CreateGuestDto } from './guests.service';
 
@@ -18,14 +18,15 @@ export class GuestsController {
         return this.guestsService.createGuestForWedding(weddingId, body);
     }
 
-    @Post('/edit/:guestId')
+   
+
+    @Put(':guestId')
     editGuest(
         @Param('weddingId') weddingId: string,
         @Param('guestId') guestId: string,
-        @Body() body: CreateGuestDto,
+        @Body() updatedData: CreateGuestDto,
     ) {
-        console.log('Editing guest:', guestId, 'for wedding:', weddingId);
-        console.log('With body:', body);
-        return this.guestsService.editGuestForWedding(weddingId, guestId, body);
-    }
+        console.log('Editing guest:', weddingId, guestId, updatedData);
+        return this.guestsService.editGuestForWedding(weddingId, guestId, updatedData);
+    }   
 }

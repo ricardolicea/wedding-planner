@@ -5,6 +5,7 @@ import {
   Typography,
   LinearProgress,
   Grid,
+  Stack
 } from '@mui/material';
 import { useGuests } from '../contexts/GuestContext';
 import workInProgressImage from '/work_in_progress.png'
@@ -155,13 +156,13 @@ export function DashboardPage() {
             <Typography variant="body2" color="text.secondary" mb={2}>
               Lo que viene pronto en la planeación.
             </Typography>
-            <img src={workInProgressImage} alt="Work in progress" />
+           {/*  <img src={workInProgressImage} alt="Work in progress" /> */}
 
-            {/* <Stack spacing={1.5}>
+            <Stack spacing={1.5}>
               <TaskRow title="Definir menú con el catering" due="Próxima semana" />
               <TaskRow title="Probar vestido y traje" due="En 2 semanas" />
               <TaskRow title="Enviar invitaciones formales" due="En 1 mes" />
-            </Stack> */}
+            </Stack>
           </CardContent>
         </Card>
         {/*  </Grid> */}
@@ -190,7 +191,7 @@ export function DashboardPage() {
   );
 }
 
-/* function TaskRow({ title, due }: { title: string; due: string }) {
+function TaskRow({ title, due }: { title: string; due: string }) {
   return (
     <Box
       sx={{
@@ -209,7 +210,7 @@ export function DashboardPage() {
       </Typography>
     </Box>
   );
-} */
+} 
 
 /* function VendorRow({ name, status }: { name: string; status: string }) {
   const color =
