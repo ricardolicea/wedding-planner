@@ -5,8 +5,9 @@ import {
   useState,
   type PropsWithChildren,
 } from 'react';
-import type { Session, User } from '@supabase/supabase-js';
+import type {  Session, User } from '@supabase/supabase-js';
 import { supabase } from '../lib/supabaseClient';
+import { type ApiError } from '../api/ApiError';
 
 interface AuthContextValue {
   user: User | null;
@@ -14,8 +15,8 @@ interface AuthContextValue {
   loading: boolean;
   setLoading: (loading: boolean) => void;
   weddingId?: string | null;
-  signIn: (email: string, password: string) => Promise<{ error?: any }>;
-  signUp: (email: string, password: string) => Promise<{ error?: any }>;
+  signIn: (email: string, password: string) => Promise<{ error?: ApiError }>;
+  signUp: (email: string, password: string) => Promise<{ error?: ApiError }>;
   signOut: () => Promise<void>;
 }
 
@@ -42,8 +43,8 @@ export function AuthProvider({ children }: PropsWithChildren) {
         return;
       }
       setWeddingId(data?.wedding_id ?? null);
-    } catch (err: any) {
-      setError('Error loading wedding for user');
+    } catch (err: ApiError | unknown) {
+      setError('Error loading wedding for user' + (err instanceof Error ? err.message : String(err)));
       setWeddingId(null);
     }
   }
@@ -60,8 +61,8 @@ export function AuthProvider({ children }: PropsWithChildren) {
         if (currentUser) {
           await loadWeddingForUser(currentUser.id);
         }
-      } catch (err: any) {
-        setError('Error initializing auth context');
+      } catch (err: unknown) {
+        setError('Error initializing auth context' + (err instanceof Error ? err.message : String(err)));
       } finally {
         setLoading(false);
       }
@@ -80,8 +81,8 @@ export function AuthProvider({ children }: PropsWithChildren) {
         } else {
           setWeddingId(null);
         }
-      } catch (err: any) {
-        setError('Error in auth state change');
+      } catch (err: ApiError | unknown) {
+        setError('Error in auth state change' + (err instanceof Error ? err.message : String(err)));
         setWeddingId(null);
       } finally {
         setLoading(false);
@@ -93,12 +94,12 @@ export function AuthProvider({ children }: PropsWithChildren) {
 
   async function signIn(email: string, password: string) {
     const { error } = await supabase.auth.signInWithPassword({ email, password });
-    return { error };
+    return { error: error ?? undefined };
   }
 
   async function signUp(email: string, password: string) {
     const { error } = await supabase.auth.signUp({ email, password });
-    return { error };
+    return { error: error ?? undefined };
   }
 
   async function signOut() {

@@ -13,7 +13,7 @@ export class GuestsController {
     @Post()
     createGuest(
         @Param('weddingId') weddingId: string,
-        @Body() body: any,
+        @Body() body: CreateGuestDto,
     ) {
         return this.guestsService.createGuestForWedding(weddingId, body);
     }

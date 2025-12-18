@@ -13,11 +13,18 @@
     "build:api": "npm run build --workspace api",
     "build:web": "npm run build --workspace web",
     "lint:api": "npm run lint --workspace api",
-    "lint:web": "npm run lint --workspace web"
+    "lint:web": "npm run lint --workspace web",
+    "lint": "eslint . --max-warnings=0"
   },
   "devDependencies": {
+    "@eslint/js": "^9.39.2",
     "@types/axios": "^0.9.36",
-    "concurrently": "^9.2.1"
+    "concurrently": "^9.2.1",
+    "eslint": "^9.39.2",
+    "eslint-plugin-react": "^7.37.5",
+    "globals": "^16.5.0",
+    "husky": "^9.1.7",
+    "typescript-eslint": "^8.50.0"
   },
   "dependencies": {
     "@nestjs/cli": "^11.0.14",

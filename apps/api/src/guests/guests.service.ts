@@ -2,20 +2,20 @@ import { Injectable } from '@nestjs/common';
 import { SupabaseService } from 'src/supabase/supabase.service';
 
 export interface CreateGuestDto {
-   id: string;
-    firstname: string;
-    lastname?: string;
-    email: string;
-    phone: string;
-    relation: string;
-    hasPlusOne: boolean;
-    notes: string;
-    rsvpStatus: 'accepted' | 'declined' | 'pending';
-    dietaryNotes: string;
-    createdAt: string;
-    updatedAt: string;
-    invitedBy: string;
-    listtype: string;
+  id: string;
+  firstname: string;
+  lastname?: string;
+  email: string;
+  phone: string;
+  relation: string;
+  hasPlusOne: boolean;
+  notes: string;
+  rsvpStatus: 'accepted' | 'declined' | 'pending';
+  dietaryNotes: string;
+  createdAt: string;
+  updatedAt: string;
+  invitedBy: string;
+  listtype: string;
 }
 
 type GuestRow = {
@@ -63,14 +63,13 @@ export class GuestsService {
   constructor(private readonly supabase: SupabaseService) {}
 
   async findAllGuestsByWedding(weddingId: string): Promise<CreateGuestDto[]> {
-        const client = this.supabase.getClient();
+    const client = this.supabase.getClient();
 
     const { data, error } = await client
       .from('guests')
       .select('*')
       .eq('wedding_id', weddingId)
       .order('first_name', { ascending: true });
-
 
     if (error) {
       throw new Error(`Error fetching guests: ${error.message}`);
@@ -81,15 +80,9 @@ export class GuestsService {
 
   async createGuestForWedding(
     weddingId: string,
-    body: {guest: CreateGuestDto},
+    guest: CreateGuestDto,
   ): Promise<void> {
-        const client = this.supabase.getClient();
-        const {guest} = body;
-
-        console.log('GuestsService.createGuestForWedding called with:', {
-          weddingId,
-          body,
-        });
+    const client = this.supabase.getClient();
 
     const { data, error } = await client
       .from('guests')
@@ -113,7 +106,7 @@ export class GuestsService {
     if (error) {
       throw new Error(`Error creating guest: ${error.message}`);
     }
-    return data
+    return data;
   }
 
   async editGuestForWedding(
@@ -121,13 +114,13 @@ export class GuestsService {
     guestId: string,
     body: CreateGuestDto,
   ): Promise<void> {
-        const client = this.supabase.getClient();
+    const client = this.supabase.getClient();
 
-        console.log('GuestsService.editGuestForWedding called with:', {
-          weddingId,
-          guestId,
-          body,
-        });
+    console.log('GuestsService.editGuestForWedding called with:', {
+      weddingId,
+      guestId,
+      body,
+    });
 
     const { data, error } = await client
       .from('guests')
@@ -152,6 +145,6 @@ export class GuestsService {
     if (error) {
       throw new Error(`Error editing guest: ${error.message}`);
     }
-    return data
-  } 
+    return data;
+  }
 }

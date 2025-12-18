@@ -66,9 +66,15 @@ export function CreateUserPage() {
       setFullName('');
       setEmail('');
       setPassword('');
-    } catch (err: any) {
+    } catch (err: unknown) {
       console.error(err);
-      setError(err.message ?? 'Error creando usuario');
+      if (err instanceof Error) {
+        setError(err.message);
+      } else if (typeof err === 'string') {
+        setError(err);
+      } else {
+        setError('Error creando usuario');
+      }
     } finally {
       setLoading(false);
     }

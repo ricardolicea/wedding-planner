@@ -3,6 +3,8 @@ import { useAuth } from "./AuthContext";
 import { getGuests } from "../api/getGuests";
 import { createGuest } from "../api/createGuests";
 import type { Guest } from "../api/Guest";
+import type { ReactNode } from "react";
+
 
 type GuestsContextType = {
   guests: Guest[] | null;
@@ -14,7 +16,7 @@ type GuestsContextType = {
 
 const GuestsContext = createContext<GuestsContextType | undefined>(undefined);
 
-export function GuestsProvider({ children }: any) {
+export function GuestsProvider({ children }: { children: ReactNode }) {
   const { weddingId } = useAuth();
   const [guests, setGuests] = useState<Guest[] | null>(null);
   const [loading, setLoading] = useState<boolean>(false);
@@ -27,8 +29,8 @@ export function GuestsProvider({ children }: any) {
     try {
       const data = await getGuests(weddingId);
       setGuests(data);
-    } catch (err: any) {
-      setError('Error cargando invitados');
+    } catch (err: unknown) {
+      setError('Error cargando invitados ' + (err instanceof Error ? err.message : String(err)));
       setGuests([]);
     } finally {
       setLoading(false);
@@ -40,14 +42,13 @@ export function GuestsProvider({ children }: any) {
     try {
       const newGuest = await createGuest(payload, weddingId);
       setGuests(prev => [...(prev || []), ...(Array.isArray(newGuest) ? newGuest : [newGuest])]);
-    } catch (err: any) {
-      setError('Error agregando invitado');
+    } catch (err: unknown) {
+      setError('Error agregando invitado ' + (err instanceof Error ? err.message : String(err)));
     }
   }
 
   useEffect(() => {
     loadGuests();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [weddingId]);
 
   return (

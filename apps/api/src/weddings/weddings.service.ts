@@ -18,7 +18,7 @@ export class WeddingsService {
         // Lógica para obtener las bodas
         const client = this.supabase.getClient();
         
-    const { data, error } = await client
+    const { data } = await client
       .from('weddings')
       .select('*')
       .order('date', { ascending: true });

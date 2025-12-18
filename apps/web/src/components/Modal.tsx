@@ -57,16 +57,14 @@ function GuestsModal({
       setLoading(true);
       setError(null);
       await createGuest(
-        {
-          guest,
-        },
+        guest!,
         weddingId,
       );
 
       //await loadGuests();
-    } catch (err: any) {
+    } catch (err: unknown) {
       console.error(err);
-      setError(err.message ?? 'Error creando invitado');
+      setError(err instanceof Error ? err.message : 'Error creando invitado');
     } finally {
       setGuest({
         id: '',
