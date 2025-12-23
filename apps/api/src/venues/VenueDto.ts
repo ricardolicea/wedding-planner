@@ -1,47 +1,43 @@
 export interface VenueDto {
-    id: string;
-    weddingId: string;
-    venueName: string;
-    yearPrice: string;
-    hours: Int16Array;
-    rentServicePrice: Float32Array;
-    civilDescription: string;
-    corkage: boolean;
-    platePrice: Float32Array;
-    plateUpgradePrice: Float32Array;
-    alcoholPackagePrice: Float32Array;
-    alcoholUpgradePrice: Float32Array;
-    lateNightSnackPrice: Float32Array;
-    extraHourPrice: Float32Array;
-    valetParkingPrice: Float32Array;
-    rsvCharge: Float32Array;
-    guarantyDeposit: Float32Array;
+  weddingId: string;
+  venueName: string;
+  yearPrice: string;
+  hours: number;
+  rentServicePrice: number;
+  civilDescription: string;
+  corkage: boolean;
+  platePrice: number;
+  plateUpgradePrice: number;
+  alcoholPackagePrice: number;
+  alcoholUpgradePrice: number;
+  lateNightSnackPrice: number;
+  extraHourPrice: number;
+  valetParkingPrice: number;
+  rsvCharge: number;
+  guarantyDeposit: number;
 }
 
 type VenueRow = {
-    id: string;
-    wedding_id: string;
-    venue_name: string;
-    year_price: string;
-    hours: Int16Array;
-    rent_service_price: Float32Array;
-    civil_description: string;
-    corkage: boolean;
-    plate_price: Float32Array;
-    plate_upgrade_price: Float32Array;
-    alcohol_package_price: Float32Array;
-    alcohol_upgrade_price: Float32Array;
-    late_night_snack_price: Float32Array;
-    extra_hour_price: Float32Array;
-    valet_parking_price: Float32Array;    
-    rsv_charge: Float32Array;
-    guaranty_deposit: Float32Array;
+  wedding_id: string;
+  venue_name: string;
+  year_price: string;
+  hours: number;
+  rent_service_price: number;
+  civil_description: string;
+  corkage: boolean;
+  plate_price: number;
+  plate_upgrade_price: number;
+  alcohol_package_price: number;
+  alcohol_upgrade_price: number;
+  late_night_snack_price: number;
+  extra_hour_price: number;
+  valet_parking_price: number;
+  rsv_charge: number;
+  guaranty_deposit: number;
 };
-
 
 export function mapVenueDtoToRow(dto: VenueDto): VenueRow {
   return {
-    id: dto.id,
     wedding_id: dto.weddingId,
     venue_name: dto.venueName,
     year_price: dto.yearPrice,
@@ -59,4 +55,25 @@ export function mapVenueDtoToRow(dto: VenueDto): VenueRow {
     rsv_charge: dto.rsvCharge,
     guaranty_deposit: dto.guarantyDeposit,
   };
-}   
+}
+
+export function mapVenueRowToDto(row: VenueRow): VenueDto {
+  return {
+    weddingId: row.wedding_id,
+    venueName: row.venue_name,
+    yearPrice: row.year_price,
+    hours: row.hours,
+    rentServicePrice: row.rent_service_price,
+    civilDescription: row.civil_description,
+    corkage: row.corkage,
+    platePrice: row.plate_price,
+    plateUpgradePrice: row.plate_upgrade_price,
+    alcoholPackagePrice: row.alcohol_package_price,
+    alcoholUpgradePrice: row.alcohol_upgrade_price,
+    lateNightSnackPrice: row.late_night_snack_price,
+    extraHourPrice: row.extra_hour_price,
+    valetParkingPrice: row.valet_parking_price,
+    rsvCharge: row.rsv_charge,
+    guarantyDeposit: row.guaranty_deposit,
+  };
+}

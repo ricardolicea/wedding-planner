@@ -25,8 +25,9 @@ export class VenuesController {
     @Put(':venueId')
     updateVenue(
         @Param('venueId') venueId: string,
+        @Param('weddingId') weddingId: string,
         @Body() updatedData: VenueDto,
     ) {
-
-        return this.venuesService.updateVenue(venueId, updatedData);}
+        return this.venuesService.updateVenue(venueId, {...updatedData, weddingId: weddingId});
+    }
 }

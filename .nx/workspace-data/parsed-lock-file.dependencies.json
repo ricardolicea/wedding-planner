@@ -1,60 +1,5 @@
 [
   {
-    "source": "npm:@prisma/client@5.22.0",
-    "target": "npm:prisma@5.22.0",
-    "type": "static"
-  },
-  {
-    "source": "npm:@prisma/engines@5.22.0",
-    "target": "npm:@prisma/debug@5.22.0",
-    "type": "static"
-  },
-  {
-    "source": "npm:@prisma/engines@5.22.0",
-    "target": "npm:@prisma/engines-version@5.22.0-44.605197351a3c8bdd595af2d2a9bc3025bca48ea2",
-    "type": "static"
-  },
-  {
-    "source": "npm:@prisma/engines@5.22.0",
-    "target": "npm:@prisma/fetch-engine@5.22.0",
-    "type": "static"
-  },
-  {
-    "source": "npm:@prisma/engines@5.22.0",
-    "target": "npm:@prisma/get-platform@5.22.0",
-    "type": "static"
-  },
-  {
-    "source": "npm:@prisma/fetch-engine@5.22.0",
-    "target": "npm:@prisma/debug@5.22.0",
-    "type": "static"
-  },
-  {
-    "source": "npm:@prisma/fetch-engine@5.22.0",
-    "target": "npm:@prisma/engines-version@5.22.0-44.605197351a3c8bdd595af2d2a9bc3025bca48ea2",
-    "type": "static"
-  },
-  {
-    "source": "npm:@prisma/fetch-engine@5.22.0",
-    "target": "npm:@prisma/get-platform@5.22.0",
-    "type": "static"
-  },
-  {
-    "source": "npm:@prisma/get-platform@5.22.0",
-    "target": "npm:@prisma/debug@5.22.0",
-    "type": "static"
-  },
-  {
-    "source": "npm:prisma@5.22.0",
-    "target": "npm:@prisma/engines@5.22.0",
-    "type": "static"
-  },
-  {
-    "source": "npm:prisma@5.22.0",
-    "target": "npm:fsevents",
-    "type": "static"
-  },
-  {
     "source": "npm:@types/node@24.10.1",
     "target": "npm:undici-types@7.16.0",
     "type": "static"
@@ -3336,11 +3281,6 @@
   },
   {
     "source": "npm:@typescript-eslint/eslint-plugin",
-    "target": "npm:graphemer",
-    "type": "static"
-  },
-  {
-    "source": "npm:@typescript-eslint/eslint-plugin",
     "target": "npm:ignore@7.0.5",
     "type": "static"
   },
@@ -3910,6 +3850,186 @@
     "type": "static"
   },
   {
+    "source": "npm:array-buffer-byte-length",
+    "target": "npm:call-bound",
+    "type": "static"
+  },
+  {
+    "source": "npm:array-buffer-byte-length",
+    "target": "npm:is-array-buffer",
+    "type": "static"
+  },
+  {
+    "source": "npm:array-includes",
+    "target": "npm:call-bind",
+    "type": "static"
+  },
+  {
+    "source": "npm:array-includes",
+    "target": "npm:call-bound",
+    "type": "static"
+  },
+  {
+    "source": "npm:array-includes",
+    "target": "npm:define-properties",
+    "type": "static"
+  },
+  {
+    "source": "npm:array-includes",
+    "target": "npm:es-abstract",
+    "type": "static"
+  },
+  {
+    "source": "npm:array-includes",
+    "target": "npm:es-object-atoms",
+    "type": "static"
+  },
+  {
+    "source": "npm:array-includes",
+    "target": "npm:get-intrinsic",
+    "type": "static"
+  },
+  {
+    "source": "npm:array-includes",
+    "target": "npm:is-string",
+    "type": "static"
+  },
+  {
+    "source": "npm:array-includes",
+    "target": "npm:math-intrinsics",
+    "type": "static"
+  },
+  {
+    "source": "npm:array.prototype.findlast",
+    "target": "npm:call-bind",
+    "type": "static"
+  },
+  {
+    "source": "npm:array.prototype.findlast",
+    "target": "npm:define-properties",
+    "type": "static"
+  },
+  {
+    "source": "npm:array.prototype.findlast",
+    "target": "npm:es-abstract",
+    "type": "static"
+  },
+  {
+    "source": "npm:array.prototype.findlast",
+    "target": "npm:es-errors",
+    "type": "static"
+  },
+  {
+    "source": "npm:array.prototype.findlast",
+    "target": "npm:es-object-atoms",
+    "type": "static"
+  },
+  {
+    "source": "npm:array.prototype.findlast",
+    "target": "npm:es-shim-unscopables",
+    "type": "static"
+  },
+  {
+    "source": "npm:array.prototype.flat",
+    "target": "npm:call-bind",
+    "type": "static"
+  },
+  {
+    "source": "npm:array.prototype.flat",
+    "target": "npm:define-properties",
+    "type": "static"
+  },
+  {
+    "source": "npm:array.prototype.flat",
+    "target": "npm:es-abstract",
+    "type": "static"
+  },
+  {
+    "source": "npm:array.prototype.flat",
+    "target": "npm:es-shim-unscopables",
+    "type": "static"
+  },
+  {
+    "source": "npm:array.prototype.flatmap",
+    "target": "npm:call-bind",
+    "type": "static"
+  },
+  {
+    "source": "npm:array.prototype.flatmap",
+    "target": "npm:define-properties",
+    "type": "static"
+  },
+  {
+    "source": "npm:array.prototype.flatmap",
+    "target": "npm:es-abstract",
+    "type": "static"
+  },
+  {
+    "source": "npm:array.prototype.flatmap",
+    "target": "npm:es-shim-unscopables",
+    "type": "static"
+  },
+  {
+    "source": "npm:array.prototype.tosorted",
+    "target": "npm:call-bind",
+    "type": "static"
+  },
+  {
+    "source": "npm:array.prototype.tosorted",
+    "target": "npm:define-properties",
+    "type": "static"
+  },
+  {
+    "source": "npm:array.prototype.tosorted",
+    "target": "npm:es-abstract",
+    "type": "static"
+  },
+  {
+    "source": "npm:array.prototype.tosorted",
+    "target": "npm:es-errors",
+    "type": "static"
+  },
+  {
+    "source": "npm:array.prototype.tosorted",
+    "target": "npm:es-shim-unscopables",
+    "type": "static"
+  },
+  {
+    "source": "npm:arraybuffer.prototype.slice",
+    "target": "npm:array-buffer-byte-length",
+    "type": "static"
+  },
+  {
+    "source": "npm:arraybuffer.prototype.slice",
+    "target": "npm:call-bind",
+    "type": "static"
+  },
+  {
+    "source": "npm:arraybuffer.prototype.slice",
+    "target": "npm:define-properties",
+    "type": "static"
+  },
+  {
+    "source": "npm:arraybuffer.prototype.slice",
+    "target": "npm:es-abstract",
+    "type": "static"
+  },
+  {
+    "source": "npm:arraybuffer.prototype.slice",
+    "target": "npm:es-errors",
+    "type": "static"
+  },
+  {
+    "source": "npm:arraybuffer.prototype.slice",
+    "target": "npm:get-intrinsic",
+    "type": "static"
+  },
+  {
+    "source": "npm:arraybuffer.prototype.slice",
+    "target": "npm:is-array-buffer",
+    "type": "static"
+  },
+  {
     "source": "npm:autoprefixer",
     "target": "npm:postcss",
     "type": "static"
@@ -3942,6 +4062,11 @@
   {
     "source": "npm:autoprefixer",
     "target": "npm:postcss-value-parser",
+    "type": "static"
+  },
+  {
+    "source": "npm:available-typed-arrays",
+    "target": "npm:possible-typed-array-names",
     "type": "static"
   },
   {
@@ -4340,6 +4465,26 @@
     "type": "static"
   },
   {
+    "source": "npm:call-bind",
+    "target": "npm:call-bind-apply-helpers",
+    "type": "static"
+  },
+  {
+    "source": "npm:call-bind",
+    "target": "npm:es-define-property",
+    "type": "static"
+  },
+  {
+    "source": "npm:call-bind",
+    "target": "npm:get-intrinsic",
+    "type": "static"
+  },
+  {
+    "source": "npm:call-bind",
+    "target": "npm:set-function-length",
+    "type": "static"
+  },
+  {
     "source": "npm:call-bind-apply-helpers",
     "target": "npm:es-errors",
     "type": "static"
@@ -4570,6 +4715,51 @@
     "type": "static"
   },
   {
+    "source": "npm:data-view-buffer",
+    "target": "npm:call-bound",
+    "type": "static"
+  },
+  {
+    "source": "npm:data-view-buffer",
+    "target": "npm:es-errors",
+    "type": "static"
+  },
+  {
+    "source": "npm:data-view-buffer",
+    "target": "npm:is-data-view",
+    "type": "static"
+  },
+  {
+    "source": "npm:data-view-byte-length",
+    "target": "npm:call-bound",
+    "type": "static"
+  },
+  {
+    "source": "npm:data-view-byte-length",
+    "target": "npm:es-errors",
+    "type": "static"
+  },
+  {
+    "source": "npm:data-view-byte-length",
+    "target": "npm:is-data-view",
+    "type": "static"
+  },
+  {
+    "source": "npm:data-view-byte-offset",
+    "target": "npm:call-bound",
+    "type": "static"
+  },
+  {
+    "source": "npm:data-view-byte-offset",
+    "target": "npm:es-errors",
+    "type": "static"
+  },
+  {
+    "source": "npm:data-view-byte-offset",
+    "target": "npm:is-data-view",
+    "type": "static"
+  },
+  {
     "source": "npm:debug",
     "target": "npm:ms",
     "type": "static"
@@ -4585,6 +4775,36 @@
     "type": "static"
   },
   {
+    "source": "npm:define-data-property",
+    "target": "npm:es-define-property",
+    "type": "static"
+  },
+  {
+    "source": "npm:define-data-property",
+    "target": "npm:es-errors",
+    "type": "static"
+  },
+  {
+    "source": "npm:define-data-property",
+    "target": "npm:gopd",
+    "type": "static"
+  },
+  {
+    "source": "npm:define-properties",
+    "target": "npm:define-data-property",
+    "type": "static"
+  },
+  {
+    "source": "npm:define-properties",
+    "target": "npm:has-property-descriptors",
+    "type": "static"
+  },
+  {
+    "source": "npm:define-properties",
+    "target": "npm:object-keys",
+    "type": "static"
+  },
+  {
     "source": "npm:dezalgo",
     "target": "npm:asap",
     "type": "static"
@@ -4592,6 +4812,11 @@
   {
     "source": "npm:dezalgo",
     "target": "npm:wrappy",
+    "type": "static"
+  },
+  {
+    "source": "npm:doctrine",
+    "target": "npm:esutils",
     "type": "static"
   },
   {
@@ -4650,6 +4875,356 @@
     "type": "static"
   },
   {
+    "source": "npm:es-abstract",
+    "target": "npm:array-buffer-byte-length",
+    "type": "static"
+  },
+  {
+    "source": "npm:es-abstract",
+    "target": "npm:arraybuffer.prototype.slice",
+    "type": "static"
+  },
+  {
+    "source": "npm:es-abstract",
+    "target": "npm:available-typed-arrays",
+    "type": "static"
+  },
+  {
+    "source": "npm:es-abstract",
+    "target": "npm:call-bind",
+    "type": "static"
+  },
+  {
+    "source": "npm:es-abstract",
+    "target": "npm:call-bound",
+    "type": "static"
+  },
+  {
+    "source": "npm:es-abstract",
+    "target": "npm:data-view-buffer",
+    "type": "static"
+  },
+  {
+    "source": "npm:es-abstract",
+    "target": "npm:data-view-byte-length",
+    "type": "static"
+  },
+  {
+    "source": "npm:es-abstract",
+    "target": "npm:data-view-byte-offset",
+    "type": "static"
+  },
+  {
+    "source": "npm:es-abstract",
+    "target": "npm:es-define-property",
+    "type": "static"
+  },
+  {
+    "source": "npm:es-abstract",
+    "target": "npm:es-errors",
+    "type": "static"
+  },
+  {
+    "source": "npm:es-abstract",
+    "target": "npm:es-object-atoms",
+    "type": "static"
+  },
+  {
+    "source": "npm:es-abstract",
+    "target": "npm:es-set-tostringtag",
+    "type": "static"
+  },
+  {
+    "source": "npm:es-abstract",
+    "target": "npm:es-to-primitive",
+    "type": "static"
+  },
+  {
+    "source": "npm:es-abstract",
+    "target": "npm:function.prototype.name",
+    "type": "static"
+  },
+  {
+    "source": "npm:es-abstract",
+    "target": "npm:get-intrinsic",
+    "type": "static"
+  },
+  {
+    "source": "npm:es-abstract",
+    "target": "npm:get-proto",
+    "type": "static"
+  },
+  {
+    "source": "npm:es-abstract",
+    "target": "npm:get-symbol-description",
+    "type": "static"
+  },
+  {
+    "source": "npm:es-abstract",
+    "target": "npm:globalthis",
+    "type": "static"
+  },
+  {
+    "source": "npm:es-abstract",
+    "target": "npm:gopd",
+    "type": "static"
+  },
+  {
+    "source": "npm:es-abstract",
+    "target": "npm:has-property-descriptors",
+    "type": "static"
+  },
+  {
+    "source": "npm:es-abstract",
+    "target": "npm:has-proto",
+    "type": "static"
+  },
+  {
+    "source": "npm:es-abstract",
+    "target": "npm:has-symbols",
+    "type": "static"
+  },
+  {
+    "source": "npm:es-abstract",
+    "target": "npm:hasown",
+    "type": "static"
+  },
+  {
+    "source": "npm:es-abstract",
+    "target": "npm:internal-slot",
+    "type": "static"
+  },
+  {
+    "source": "npm:es-abstract",
+    "target": "npm:is-array-buffer",
+    "type": "static"
+  },
+  {
+    "source": "npm:es-abstract",
+    "target": "npm:is-callable",
+    "type": "static"
+  },
+  {
+    "source": "npm:es-abstract",
+    "target": "npm:is-data-view",
+    "type": "static"
+  },
+  {
+    "source": "npm:es-abstract",
+    "target": "npm:is-negative-zero",
+    "type": "static"
+  },
+  {
+    "source": "npm:es-abstract",
+    "target": "npm:is-regex",
+    "type": "static"
+  },
+  {
+    "source": "npm:es-abstract",
+    "target": "npm:is-set",
+    "type": "static"
+  },
+  {
+    "source": "npm:es-abstract",
+    "target": "npm:is-shared-array-buffer",
+    "type": "static"
+  },
+  {
+    "source": "npm:es-abstract",
+    "target": "npm:is-string",
+    "type": "static"
+  },
+  {
+    "source": "npm:es-abstract",
+    "target": "npm:is-typed-array",
+    "type": "static"
+  },
+  {
+    "source": "npm:es-abstract",
+    "target": "npm:is-weakref",
+    "type": "static"
+  },
+  {
+    "source": "npm:es-abstract",
+    "target": "npm:math-intrinsics",
+    "type": "static"
+  },
+  {
+    "source": "npm:es-abstract",
+    "target": "npm:object-inspect",
+    "type": "static"
+  },
+  {
+    "source": "npm:es-abstract",
+    "target": "npm:object-keys",
+    "type": "static"
+  },
+  {
+    "source": "npm:es-abstract",
+    "target": "npm:object.assign",
+    "type": "static"
+  },
+  {
+    "source": "npm:es-abstract",
+    "target": "npm:own-keys",
+    "type": "static"
+  },
+  {
+    "source": "npm:es-abstract",
+    "target": "npm:regexp.prototype.flags",
+    "type": "static"
+  },
+  {
+    "source": "npm:es-abstract",
+    "target": "npm:safe-array-concat",
+    "type": "static"
+  },
+  {
+    "source": "npm:es-abstract",
+    "target": "npm:safe-push-apply",
+    "type": "static"
+  },
+  {
+    "source": "npm:es-abstract",
+    "target": "npm:safe-regex-test",
+    "type": "static"
+  },
+  {
+    "source": "npm:es-abstract",
+    "target": "npm:set-proto",
+    "type": "static"
+  },
+  {
+    "source": "npm:es-abstract",
+    "target": "npm:stop-iteration-iterator",
+    "type": "static"
+  },
+  {
+    "source": "npm:es-abstract",
+    "target": "npm:string.prototype.trim",
+    "type": "static"
+  },
+  {
+    "source": "npm:es-abstract",
+    "target": "npm:string.prototype.trimend",
+    "type": "static"
+  },
+  {
+    "source": "npm:es-abstract",
+    "target": "npm:string.prototype.trimstart",
+    "type": "static"
+  },
+  {
+    "source": "npm:es-abstract",
+    "target": "npm:typed-array-buffer",
+    "type": "static"
+  },
+  {
+    "source": "npm:es-abstract",
+    "target": "npm:typed-array-byte-length",
+    "type": "static"
+  },
+  {
+    "source": "npm:es-abstract",
+    "target": "npm:typed-array-byte-offset",
+    "type": "static"
+  },
+  {
+    "source": "npm:es-abstract",
+    "target": "npm:typed-array-length",
+    "type": "static"
+  },
+  {
+    "source": "npm:es-abstract",
+    "target": "npm:unbox-primitive",
+    "type": "static"
+  },
+  {
+    "source": "npm:es-abstract",
+    "target": "npm:which-typed-array",
+    "type": "static"
+  },
+  {
+    "source": "npm:es-iterator-helpers",
+    "target": "npm:call-bind",
+    "type": "static"
+  },
+  {
+    "source": "npm:es-iterator-helpers",
+    "target": "npm:call-bound",
+    "type": "static"
+  },
+  {
+    "source": "npm:es-iterator-helpers",
+    "target": "npm:define-properties",
+    "type": "static"
+  },
+  {
+    "source": "npm:es-iterator-helpers",
+    "target": "npm:es-abstract",
+    "type": "static"
+  },
+  {
+    "source": "npm:es-iterator-helpers",
+    "target": "npm:es-errors",
+    "type": "static"
+  },
+  {
+    "source": "npm:es-iterator-helpers",
+    "target": "npm:es-set-tostringtag",
+    "type": "static"
+  },
+  {
+    "source": "npm:es-iterator-helpers",
+    "target": "npm:function-bind",
+    "type": "static"
+  },
+  {
+    "source": "npm:es-iterator-helpers",
+    "target": "npm:get-intrinsic",
+    "type": "static"
+  },
+  {
+    "source": "npm:es-iterator-helpers",
+    "target": "npm:globalthis",
+    "type": "static"
+  },
+  {
+    "source": "npm:es-iterator-helpers",
+    "target": "npm:gopd",
+    "type": "static"
+  },
+  {
+    "source": "npm:es-iterator-helpers",
+    "target": "npm:has-property-descriptors",
+    "type": "static"
+  },
+  {
+    "source": "npm:es-iterator-helpers",
+    "target": "npm:has-proto",
+    "type": "static"
+  },
+  {
+    "source": "npm:es-iterator-helpers",
+    "target": "npm:has-symbols",
+    "type": "static"
+  },
+  {
+    "source": "npm:es-iterator-helpers",
+    "target": "npm:internal-slot",
+    "type": "static"
+  },
+  {
+    "source": "npm:es-iterator-helpers",
+    "target": "npm:iterator.prototype",
+    "type": "static"
+  },
+  {
+    "source": "npm:es-iterator-helpers",
+    "target": "npm:safe-array-concat",
+    "type": "static"
+  },
+  {
     "source": "npm:es-object-atoms",
     "target": "npm:es-errors",
     "type": "static"
@@ -4672,6 +5247,26 @@
   {
     "source": "npm:es-set-tostringtag",
     "target": "npm:hasown",
+    "type": "static"
+  },
+  {
+    "source": "npm:es-shim-unscopables",
+    "target": "npm:hasown",
+    "type": "static"
+  },
+  {
+    "source": "npm:es-to-primitive",
+    "target": "npm:is-callable",
+    "type": "static"
+  },
+  {
+    "source": "npm:es-to-primitive",
+    "target": "npm:is-date-object",
+    "type": "static"
+  },
+  {
+    "source": "npm:es-to-primitive",
+    "target": "npm:is-symbol",
     "type": "static"
   },
   {
@@ -5015,6 +5610,101 @@
     "type": "static"
   },
   {
+    "source": "npm:eslint-plugin-react",
+    "target": "npm:eslint",
+    "type": "static"
+  },
+  {
+    "source": "npm:eslint-plugin-react",
+    "target": "npm:array-includes",
+    "type": "static"
+  },
+  {
+    "source": "npm:eslint-plugin-react",
+    "target": "npm:array.prototype.findlast",
+    "type": "static"
+  },
+  {
+    "source": "npm:eslint-plugin-react",
+    "target": "npm:array.prototype.flatmap",
+    "type": "static"
+  },
+  {
+    "source": "npm:eslint-plugin-react",
+    "target": "npm:array.prototype.tosorted",
+    "type": "static"
+  },
+  {
+    "source": "npm:eslint-plugin-react",
+    "target": "npm:doctrine",
+    "type": "static"
+  },
+  {
+    "source": "npm:eslint-plugin-react",
+    "target": "npm:es-iterator-helpers",
+    "type": "static"
+  },
+  {
+    "source": "npm:eslint-plugin-react",
+    "target": "npm:estraverse",
+    "type": "static"
+  },
+  {
+    "source": "npm:eslint-plugin-react",
+    "target": "npm:hasown",
+    "type": "static"
+  },
+  {
+    "source": "npm:eslint-plugin-react",
+    "target": "npm:jsx-ast-utils",
+    "type": "static"
+  },
+  {
+    "source": "npm:eslint-plugin-react",
+    "target": "npm:minimatch",
+    "type": "static"
+  },
+  {
+    "source": "npm:eslint-plugin-react",
+    "target": "npm:object.entries",
+    "type": "static"
+  },
+  {
+    "source": "npm:eslint-plugin-react",
+    "target": "npm:object.fromentries",
+    "type": "static"
+  },
+  {
+    "source": "npm:eslint-plugin-react",
+    "target": "npm:object.values",
+    "type": "static"
+  },
+  {
+    "source": "npm:eslint-plugin-react",
+    "target": "npm:prop-types",
+    "type": "static"
+  },
+  {
+    "source": "npm:eslint-plugin-react",
+    "target": "npm:resolve@2.0.0-next.5",
+    "type": "static"
+  },
+  {
+    "source": "npm:eslint-plugin-react",
+    "target": "npm:semver@6.3.1",
+    "type": "static"
+  },
+  {
+    "source": "npm:eslint-plugin-react",
+    "target": "npm:string.prototype.matchall",
+    "type": "static"
+  },
+  {
+    "source": "npm:eslint-plugin-react",
+    "target": "npm:string.prototype.repeat",
+    "type": "static"
+  },
+  {
     "source": "npm:eslint-plugin-react-hooks",
     "target": "npm:eslint",
     "type": "static"
@@ -5047,6 +5737,21 @@
   {
     "source": "npm:eslint-plugin-react-refresh",
     "target": "npm:eslint",
+    "type": "static"
+  },
+  {
+    "source": "npm:resolve@2.0.0-next.5",
+    "target": "npm:is-core-module",
+    "type": "static"
+  },
+  {
+    "source": "npm:resolve@2.0.0-next.5",
+    "target": "npm:path-parse",
+    "type": "static"
+  },
+  {
+    "source": "npm:resolve@2.0.0-next.5",
+    "target": "npm:supports-preserve-symlinks-flag",
     "type": "static"
   },
   {
@@ -5390,6 +6095,11 @@
     "type": "static"
   },
   {
+    "source": "npm:for-each",
+    "target": "npm:is-callable",
+    "type": "static"
+  },
+  {
     "source": "npm:foreground-child",
     "target": "npm:cross-spawn",
     "type": "static"
@@ -5550,6 +6260,36 @@
     "type": "static"
   },
   {
+    "source": "npm:function.prototype.name",
+    "target": "npm:call-bind",
+    "type": "static"
+  },
+  {
+    "source": "npm:function.prototype.name",
+    "target": "npm:call-bound",
+    "type": "static"
+  },
+  {
+    "source": "npm:function.prototype.name",
+    "target": "npm:define-properties",
+    "type": "static"
+  },
+  {
+    "source": "npm:function.prototype.name",
+    "target": "npm:functions-have-names",
+    "type": "static"
+  },
+  {
+    "source": "npm:function.prototype.name",
+    "target": "npm:hasown",
+    "type": "static"
+  },
+  {
+    "source": "npm:function.prototype.name",
+    "target": "npm:is-callable",
+    "type": "static"
+  },
+  {
     "source": "npm:get-intrinsic",
     "target": "npm:call-bind-apply-helpers",
     "type": "static"
@@ -5610,6 +6350,21 @@
     "type": "static"
   },
   {
+    "source": "npm:get-symbol-description",
+    "target": "npm:call-bound",
+    "type": "static"
+  },
+  {
+    "source": "npm:get-symbol-description",
+    "target": "npm:es-errors",
+    "type": "static"
+  },
+  {
+    "source": "npm:get-symbol-description",
+    "target": "npm:get-intrinsic",
+    "type": "static"
+  },
+  {
     "source": "npm:glob",
     "target": "npm:minimatch@10.1.1",
     "type": "static"
@@ -5635,6 +6390,16 @@
     "type": "static"
   },
   {
+    "source": "npm:globalthis",
+    "target": "npm:define-properties",
+    "type": "static"
+  },
+  {
+    "source": "npm:globalthis",
+    "target": "npm:gopd",
+    "type": "static"
+  },
+  {
     "source": "npm:handlebars",
     "target": "npm:minimist",
     "type": "static"
@@ -5657,6 +6422,16 @@
   {
     "source": "npm:handlebars",
     "target": "npm:uglify-js",
+    "type": "static"
+  },
+  {
+    "source": "npm:has-property-descriptors",
+    "target": "npm:es-define-property",
+    "type": "static"
+  },
+  {
+    "source": "npm:has-proto",
+    "target": "npm:dunder-proto",
     "type": "static"
   },
   {
@@ -5740,13 +6515,218 @@
     "type": "static"
   },
   {
+    "source": "npm:internal-slot",
+    "target": "npm:es-errors",
+    "type": "static"
+  },
+  {
+    "source": "npm:internal-slot",
+    "target": "npm:hasown",
+    "type": "static"
+  },
+  {
+    "source": "npm:internal-slot",
+    "target": "npm:side-channel",
+    "type": "static"
+  },
+  {
+    "source": "npm:is-array-buffer",
+    "target": "npm:call-bind",
+    "type": "static"
+  },
+  {
+    "source": "npm:is-array-buffer",
+    "target": "npm:call-bound",
+    "type": "static"
+  },
+  {
+    "source": "npm:is-array-buffer",
+    "target": "npm:get-intrinsic",
+    "type": "static"
+  },
+  {
+    "source": "npm:is-async-function",
+    "target": "npm:async-function",
+    "type": "static"
+  },
+  {
+    "source": "npm:is-async-function",
+    "target": "npm:call-bound",
+    "type": "static"
+  },
+  {
+    "source": "npm:is-async-function",
+    "target": "npm:get-proto",
+    "type": "static"
+  },
+  {
+    "source": "npm:is-async-function",
+    "target": "npm:has-tostringtag",
+    "type": "static"
+  },
+  {
+    "source": "npm:is-async-function",
+    "target": "npm:safe-regex-test",
+    "type": "static"
+  },
+  {
+    "source": "npm:is-bigint",
+    "target": "npm:has-bigints",
+    "type": "static"
+  },
+  {
+    "source": "npm:is-boolean-object",
+    "target": "npm:call-bound",
+    "type": "static"
+  },
+  {
+    "source": "npm:is-boolean-object",
+    "target": "npm:has-tostringtag",
+    "type": "static"
+  },
+  {
     "source": "npm:is-core-module",
     "target": "npm:hasown",
     "type": "static"
   },
   {
+    "source": "npm:is-data-view",
+    "target": "npm:call-bound",
+    "type": "static"
+  },
+  {
+    "source": "npm:is-data-view",
+    "target": "npm:get-intrinsic",
+    "type": "static"
+  },
+  {
+    "source": "npm:is-data-view",
+    "target": "npm:is-typed-array",
+    "type": "static"
+  },
+  {
+    "source": "npm:is-date-object",
+    "target": "npm:call-bound",
+    "type": "static"
+  },
+  {
+    "source": "npm:is-date-object",
+    "target": "npm:has-tostringtag",
+    "type": "static"
+  },
+  {
+    "source": "npm:is-finalizationregistry",
+    "target": "npm:call-bound",
+    "type": "static"
+  },
+  {
+    "source": "npm:is-generator-function",
+    "target": "npm:call-bound",
+    "type": "static"
+  },
+  {
+    "source": "npm:is-generator-function",
+    "target": "npm:generator-function",
+    "type": "static"
+  },
+  {
+    "source": "npm:is-generator-function",
+    "target": "npm:get-proto",
+    "type": "static"
+  },
+  {
+    "source": "npm:is-generator-function",
+    "target": "npm:has-tostringtag",
+    "type": "static"
+  },
+  {
+    "source": "npm:is-generator-function",
+    "target": "npm:safe-regex-test",
+    "type": "static"
+  },
+  {
     "source": "npm:is-glob",
     "target": "npm:is-extglob",
+    "type": "static"
+  },
+  {
+    "source": "npm:is-number-object",
+    "target": "npm:call-bound",
+    "type": "static"
+  },
+  {
+    "source": "npm:is-number-object",
+    "target": "npm:has-tostringtag",
+    "type": "static"
+  },
+  {
+    "source": "npm:is-regex",
+    "target": "npm:call-bound",
+    "type": "static"
+  },
+  {
+    "source": "npm:is-regex",
+    "target": "npm:gopd",
+    "type": "static"
+  },
+  {
+    "source": "npm:is-regex",
+    "target": "npm:has-tostringtag",
+    "type": "static"
+  },
+  {
+    "source": "npm:is-regex",
+    "target": "npm:hasown",
+    "type": "static"
+  },
+  {
+    "source": "npm:is-shared-array-buffer",
+    "target": "npm:call-bound",
+    "type": "static"
+  },
+  {
+    "source": "npm:is-string",
+    "target": "npm:call-bound",
+    "type": "static"
+  },
+  {
+    "source": "npm:is-string",
+    "target": "npm:has-tostringtag",
+    "type": "static"
+  },
+  {
+    "source": "npm:is-symbol",
+    "target": "npm:call-bound",
+    "type": "static"
+  },
+  {
+    "source": "npm:is-symbol",
+    "target": "npm:has-symbols",
+    "type": "static"
+  },
+  {
+    "source": "npm:is-symbol",
+    "target": "npm:safe-regex-test",
+    "type": "static"
+  },
+  {
+    "source": "npm:is-typed-array",
+    "target": "npm:which-typed-array",
+    "type": "static"
+  },
+  {
+    "source": "npm:is-weakref",
+    "target": "npm:call-bound",
+    "type": "static"
+  },
+  {
+    "source": "npm:is-weakset",
+    "target": "npm:call-bound",
+    "type": "static"
+  },
+  {
+    "source": "npm:is-weakset",
+    "target": "npm:get-intrinsic",
     "type": "static"
   },
   {
@@ -5817,6 +6797,36 @@
   {
     "source": "npm:istanbul-reports",
     "target": "npm:istanbul-lib-report",
+    "type": "static"
+  },
+  {
+    "source": "npm:iterator.prototype",
+    "target": "npm:define-data-property",
+    "type": "static"
+  },
+  {
+    "source": "npm:iterator.prototype",
+    "target": "npm:es-object-atoms",
+    "type": "static"
+  },
+  {
+    "source": "npm:iterator.prototype",
+    "target": "npm:get-intrinsic",
+    "type": "static"
+  },
+  {
+    "source": "npm:iterator.prototype",
+    "target": "npm:get-proto",
+    "type": "static"
+  },
+  {
+    "source": "npm:iterator.prototype",
+    "target": "npm:has-symbols",
+    "type": "static"
+  },
+  {
+    "source": "npm:iterator.prototype",
+    "target": "npm:set-function-name",
     "type": "static"
   },
   {
@@ -7007,6 +8017,26 @@
   {
     "source": "npm:jsonfile",
     "target": "npm:graceful-fs",
+    "type": "static"
+  },
+  {
+    "source": "npm:jsx-ast-utils",
+    "target": "npm:array-includes",
+    "type": "static"
+  },
+  {
+    "source": "npm:jsx-ast-utils",
+    "target": "npm:array.prototype.flat",
+    "type": "static"
+  },
+  {
+    "source": "npm:jsx-ast-utils",
+    "target": "npm:object.assign",
+    "type": "static"
+  },
+  {
+    "source": "npm:jsx-ast-utils",
+    "target": "npm:object.values",
     "type": "static"
   },
   {
@@ -11235,6 +12265,96 @@
     "type": "static"
   },
   {
+    "source": "npm:object.assign",
+    "target": "npm:call-bind",
+    "type": "static"
+  },
+  {
+    "source": "npm:object.assign",
+    "target": "npm:call-bound",
+    "type": "static"
+  },
+  {
+    "source": "npm:object.assign",
+    "target": "npm:define-properties",
+    "type": "static"
+  },
+  {
+    "source": "npm:object.assign",
+    "target": "npm:es-object-atoms",
+    "type": "static"
+  },
+  {
+    "source": "npm:object.assign",
+    "target": "npm:has-symbols",
+    "type": "static"
+  },
+  {
+    "source": "npm:object.assign",
+    "target": "npm:object-keys",
+    "type": "static"
+  },
+  {
+    "source": "npm:object.entries",
+    "target": "npm:call-bind",
+    "type": "static"
+  },
+  {
+    "source": "npm:object.entries",
+    "target": "npm:call-bound",
+    "type": "static"
+  },
+  {
+    "source": "npm:object.entries",
+    "target": "npm:define-properties",
+    "type": "static"
+  },
+  {
+    "source": "npm:object.entries",
+    "target": "npm:es-object-atoms",
+    "type": "static"
+  },
+  {
+    "source": "npm:object.fromentries",
+    "target": "npm:call-bind",
+    "type": "static"
+  },
+  {
+    "source": "npm:object.fromentries",
+    "target": "npm:define-properties",
+    "type": "static"
+  },
+  {
+    "source": "npm:object.fromentries",
+    "target": "npm:es-abstract",
+    "type": "static"
+  },
+  {
+    "source": "npm:object.fromentries",
+    "target": "npm:es-object-atoms",
+    "type": "static"
+  },
+  {
+    "source": "npm:object.values",
+    "target": "npm:call-bind",
+    "type": "static"
+  },
+  {
+    "source": "npm:object.values",
+    "target": "npm:call-bound",
+    "type": "static"
+  },
+  {
+    "source": "npm:object.values",
+    "target": "npm:define-properties",
+    "type": "static"
+  },
+  {
+    "source": "npm:object.values",
+    "target": "npm:es-object-atoms",
+    "type": "static"
+  },
+  {
     "source": "npm:on-finished",
     "target": "npm:ee-first",
     "type": "static"
@@ -11345,6 +12465,21 @@
     "type": "static"
   },
   {
+    "source": "npm:own-keys",
+    "target": "npm:get-intrinsic",
+    "type": "static"
+  },
+  {
+    "source": "npm:own-keys",
+    "target": "npm:object-keys",
+    "type": "static"
+  },
+  {
+    "source": "npm:own-keys",
+    "target": "npm:safe-push-apply",
+    "type": "static"
+  },
+  {
     "source": "npm:p-limit",
     "target": "npm:yocto-queue",
     "type": "static"
@@ -11390,71 +12525,6 @@
     "type": "static"
   },
   {
-    "source": "npm:pg",
-    "target": "npm:pg-connection-string",
-    "type": "static"
-  },
-  {
-    "source": "npm:pg",
-    "target": "npm:pg-pool",
-    "type": "static"
-  },
-  {
-    "source": "npm:pg",
-    "target": "npm:pg-protocol",
-    "type": "static"
-  },
-  {
-    "source": "npm:pg",
-    "target": "npm:pg-types",
-    "type": "static"
-  },
-  {
-    "source": "npm:pg",
-    "target": "npm:pgpass",
-    "type": "static"
-  },
-  {
-    "source": "npm:pg",
-    "target": "npm:pg-cloudflare",
-    "type": "static"
-  },
-  {
-    "source": "npm:pg-pool",
-    "target": "npm:pg",
-    "type": "static"
-  },
-  {
-    "source": "npm:pg-types",
-    "target": "npm:pg-int8",
-    "type": "static"
-  },
-  {
-    "source": "npm:pg-types",
-    "target": "npm:postgres-array",
-    "type": "static"
-  },
-  {
-    "source": "npm:pg-types",
-    "target": "npm:postgres-bytea",
-    "type": "static"
-  },
-  {
-    "source": "npm:pg-types",
-    "target": "npm:postgres-date",
-    "type": "static"
-  },
-  {
-    "source": "npm:pg-types",
-    "target": "npm:postgres-interval",
-    "type": "static"
-  },
-  {
-    "source": "npm:pgpass",
-    "target": "npm:split2",
-    "type": "static"
-  },
-  {
     "source": "npm:pkg-dir",
     "target": "npm:find-up@4.1.0",
     "type": "static"
@@ -11497,11 +12567,6 @@
   {
     "source": "npm:postcss",
     "target": "npm:source-map-js",
-    "type": "static"
-  },
-  {
-    "source": "npm:postgres-interval",
-    "target": "npm:xtend",
     "type": "static"
   },
   {
@@ -11632,6 +12697,76 @@
   {
     "source": "npm:readable-stream",
     "target": "npm:util-deprecate",
+    "type": "static"
+  },
+  {
+    "source": "npm:reflect.getprototypeof",
+    "target": "npm:call-bind",
+    "type": "static"
+  },
+  {
+    "source": "npm:reflect.getprototypeof",
+    "target": "npm:define-properties",
+    "type": "static"
+  },
+  {
+    "source": "npm:reflect.getprototypeof",
+    "target": "npm:es-abstract",
+    "type": "static"
+  },
+  {
+    "source": "npm:reflect.getprototypeof",
+    "target": "npm:es-errors",
+    "type": "static"
+  },
+  {
+    "source": "npm:reflect.getprototypeof",
+    "target": "npm:es-object-atoms",
+    "type": "static"
+  },
+  {
+    "source": "npm:reflect.getprototypeof",
+    "target": "npm:get-intrinsic",
+    "type": "static"
+  },
+  {
+    "source": "npm:reflect.getprototypeof",
+    "target": "npm:get-proto",
+    "type": "static"
+  },
+  {
+    "source": "npm:reflect.getprototypeof",
+    "target": "npm:which-builtin-type",
+    "type": "static"
+  },
+  {
+    "source": "npm:regexp.prototype.flags",
+    "target": "npm:call-bind",
+    "type": "static"
+  },
+  {
+    "source": "npm:regexp.prototype.flags",
+    "target": "npm:define-properties",
+    "type": "static"
+  },
+  {
+    "source": "npm:regexp.prototype.flags",
+    "target": "npm:es-errors",
+    "type": "static"
+  },
+  {
+    "source": "npm:regexp.prototype.flags",
+    "target": "npm:get-proto",
+    "type": "static"
+  },
+  {
+    "source": "npm:regexp.prototype.flags",
+    "target": "npm:gopd",
+    "type": "static"
+  },
+  {
+    "source": "npm:regexp.prototype.flags",
+    "target": "npm:set-function-name",
     "type": "static"
   },
   {
@@ -11815,6 +12950,56 @@
     "type": "static"
   },
   {
+    "source": "npm:safe-array-concat",
+    "target": "npm:call-bind",
+    "type": "static"
+  },
+  {
+    "source": "npm:safe-array-concat",
+    "target": "npm:call-bound",
+    "type": "static"
+  },
+  {
+    "source": "npm:safe-array-concat",
+    "target": "npm:get-intrinsic",
+    "type": "static"
+  },
+  {
+    "source": "npm:safe-array-concat",
+    "target": "npm:has-symbols",
+    "type": "static"
+  },
+  {
+    "source": "npm:safe-array-concat",
+    "target": "npm:isarray",
+    "type": "static"
+  },
+  {
+    "source": "npm:safe-push-apply",
+    "target": "npm:es-errors",
+    "type": "static"
+  },
+  {
+    "source": "npm:safe-push-apply",
+    "target": "npm:isarray",
+    "type": "static"
+  },
+  {
+    "source": "npm:safe-regex-test",
+    "target": "npm:call-bound",
+    "type": "static"
+  },
+  {
+    "source": "npm:safe-regex-test",
+    "target": "npm:es-errors",
+    "type": "static"
+  },
+  {
+    "source": "npm:safe-regex-test",
+    "target": "npm:is-regex",
+    "type": "static"
+  },
+  {
     "source": "npm:schema-utils",
     "target": "npm:@types/json-schema",
     "type": "static"
@@ -11907,6 +13092,71 @@
   {
     "source": "npm:serve-static",
     "target": "npm:send",
+    "type": "static"
+  },
+  {
+    "source": "npm:set-function-length",
+    "target": "npm:define-data-property",
+    "type": "static"
+  },
+  {
+    "source": "npm:set-function-length",
+    "target": "npm:es-errors",
+    "type": "static"
+  },
+  {
+    "source": "npm:set-function-length",
+    "target": "npm:function-bind",
+    "type": "static"
+  },
+  {
+    "source": "npm:set-function-length",
+    "target": "npm:get-intrinsic",
+    "type": "static"
+  },
+  {
+    "source": "npm:set-function-length",
+    "target": "npm:gopd",
+    "type": "static"
+  },
+  {
+    "source": "npm:set-function-length",
+    "target": "npm:has-property-descriptors",
+    "type": "static"
+  },
+  {
+    "source": "npm:set-function-name",
+    "target": "npm:define-data-property",
+    "type": "static"
+  },
+  {
+    "source": "npm:set-function-name",
+    "target": "npm:es-errors",
+    "type": "static"
+  },
+  {
+    "source": "npm:set-function-name",
+    "target": "npm:functions-have-names",
+    "type": "static"
+  },
+  {
+    "source": "npm:set-function-name",
+    "target": "npm:has-property-descriptors",
+    "type": "static"
+  },
+  {
+    "source": "npm:set-proto",
+    "target": "npm:dunder-proto",
+    "type": "static"
+  },
+  {
+    "source": "npm:set-proto",
+    "target": "npm:es-errors",
+    "type": "static"
+  },
+  {
+    "source": "npm:set-proto",
+    "target": "npm:es-object-atoms",
     "type": "static"
   },
   {
@@ -12010,6 +13260,16 @@
     "type": "static"
   },
   {
+    "source": "npm:stop-iteration-iterator",
+    "target": "npm:es-errors",
+    "type": "static"
+  },
+  {
+    "source": "npm:stop-iteration-iterator",
+    "target": "npm:internal-slot",
+    "type": "static"
+  },
+  {
     "source": "npm:string_decoder",
     "target": "npm:safe-buffer",
     "type": "static"
@@ -12052,6 +13312,151 @@
   {
     "source": "npm:string-width-cjs",
     "target": "npm:strip-ansi",
+    "type": "static"
+  },
+  {
+    "source": "npm:string.prototype.matchall",
+    "target": "npm:call-bind",
+    "type": "static"
+  },
+  {
+    "source": "npm:string.prototype.matchall",
+    "target": "npm:call-bound",
+    "type": "static"
+  },
+  {
+    "source": "npm:string.prototype.matchall",
+    "target": "npm:define-properties",
+    "type": "static"
+  },
+  {
+    "source": "npm:string.prototype.matchall",
+    "target": "npm:es-abstract",
+    "type": "static"
+  },
+  {
+    "source": "npm:string.prototype.matchall",
+    "target": "npm:es-errors",
+    "type": "static"
+  },
+  {
+    "source": "npm:string.prototype.matchall",
+    "target": "npm:es-object-atoms",
+    "type": "static"
+  },
+  {
+    "source": "npm:string.prototype.matchall",
+    "target": "npm:get-intrinsic",
+    "type": "static"
+  },
+  {
+    "source": "npm:string.prototype.matchall",
+    "target": "npm:gopd",
+    "type": "static"
+  },
+  {
+    "source": "npm:string.prototype.matchall",
+    "target": "npm:has-symbols",
+    "type": "static"
+  },
+  {
+    "source": "npm:string.prototype.matchall",
+    "target": "npm:internal-slot",
+    "type": "static"
+  },
+  {
+    "source": "npm:string.prototype.matchall",
+    "target": "npm:regexp.prototype.flags",
+    "type": "static"
+  },
+  {
+    "source": "npm:string.prototype.matchall",
+    "target": "npm:set-function-name",
+    "type": "static"
+  },
+  {
+    "source": "npm:string.prototype.matchall",
+    "target": "npm:side-channel",
+    "type": "static"
+  },
+  {
+    "source": "npm:string.prototype.repeat",
+    "target": "npm:define-properties",
+    "type": "static"
+  },
+  {
+    "source": "npm:string.prototype.repeat",
+    "target": "npm:es-abstract",
+    "type": "static"
+  },
+  {
+    "source": "npm:string.prototype.trim",
+    "target": "npm:call-bind",
+    "type": "static"
+  },
+  {
+    "source": "npm:string.prototype.trim",
+    "target": "npm:call-bound",
+    "type": "static"
+  },
+  {
+    "source": "npm:string.prototype.trim",
+    "target": "npm:define-data-property",
+    "type": "static"
+  },
+  {
+    "source": "npm:string.prototype.trim",
+    "target": "npm:define-properties",
+    "type": "static"
+  },
+  {
+    "source": "npm:string.prototype.trim",
+    "target": "npm:es-abstract",
+    "type": "static"
+  },
+  {
+    "source": "npm:string.prototype.trim",
+    "target": "npm:es-object-atoms",
+    "type": "static"
+  },
+  {
+    "source": "npm:string.prototype.trim",
+    "target": "npm:has-property-descriptors",
+    "type": "static"
+  },
+  {
+    "source": "npm:string.prototype.trimend",
+    "target": "npm:call-bind",
+    "type": "static"
+  },
+  {
+    "source": "npm:string.prototype.trimend",
+    "target": "npm:call-bound",
+    "type": "static"
+  },
+  {
+    "source": "npm:string.prototype.trimend",
+    "target": "npm:define-properties",
+    "type": "static"
+  },
+  {
+    "source": "npm:string.prototype.trimend",
+    "target": "npm:es-object-atoms",
+    "type": "static"
+  },
+  {
+    "source": "npm:string.prototype.trimstart",
+    "target": "npm:call-bind",
+    "type": "static"
+  },
+  {
+    "source": "npm:string.prototype.trimstart",
+    "target": "npm:define-properties",
+    "type": "static"
+  },
+  {
+    "source": "npm:string.prototype.trimstart",
+    "target": "npm:es-object-atoms",
     "type": "static"
   },
   {
@@ -12615,6 +14020,111 @@
     "type": "static"
   },
   {
+    "source": "npm:typed-array-buffer",
+    "target": "npm:call-bound",
+    "type": "static"
+  },
+  {
+    "source": "npm:typed-array-buffer",
+    "target": "npm:es-errors",
+    "type": "static"
+  },
+  {
+    "source": "npm:typed-array-buffer",
+    "target": "npm:is-typed-array",
+    "type": "static"
+  },
+  {
+    "source": "npm:typed-array-byte-length",
+    "target": "npm:call-bind",
+    "type": "static"
+  },
+  {
+    "source": "npm:typed-array-byte-length",
+    "target": "npm:for-each",
+    "type": "static"
+  },
+  {
+    "source": "npm:typed-array-byte-length",
+    "target": "npm:gopd",
+    "type": "static"
+  },
+  {
+    "source": "npm:typed-array-byte-length",
+    "target": "npm:has-proto",
+    "type": "static"
+  },
+  {
+    "source": "npm:typed-array-byte-length",
+    "target": "npm:is-typed-array",
+    "type": "static"
+  },
+  {
+    "source": "npm:typed-array-byte-offset",
+    "target": "npm:available-typed-arrays",
+    "type": "static"
+  },
+  {
+    "source": "npm:typed-array-byte-offset",
+    "target": "npm:call-bind",
+    "type": "static"
+  },
+  {
+    "source": "npm:typed-array-byte-offset",
+    "target": "npm:for-each",
+    "type": "static"
+  },
+  {
+    "source": "npm:typed-array-byte-offset",
+    "target": "npm:gopd",
+    "type": "static"
+  },
+  {
+    "source": "npm:typed-array-byte-offset",
+    "target": "npm:has-proto",
+    "type": "static"
+  },
+  {
+    "source": "npm:typed-array-byte-offset",
+    "target": "npm:is-typed-array",
+    "type": "static"
+  },
+  {
+    "source": "npm:typed-array-byte-offset",
+    "target": "npm:reflect.getprototypeof",
+    "type": "static"
+  },
+  {
+    "source": "npm:typed-array-length",
+    "target": "npm:call-bind",
+    "type": "static"
+  },
+  {
+    "source": "npm:typed-array-length",
+    "target": "npm:for-each",
+    "type": "static"
+  },
+  {
+    "source": "npm:typed-array-length",
+    "target": "npm:gopd",
+    "type": "static"
+  },
+  {
+    "source": "npm:typed-array-length",
+    "target": "npm:is-typed-array",
+    "type": "static"
+  },
+  {
+    "source": "npm:typed-array-length",
+    "target": "npm:possible-typed-array-names",
+    "type": "static"
+  },
+  {
+    "source": "npm:typed-array-length",
+    "target": "npm:reflect.getprototypeof",
+    "type": "static"
+  },
+  {
     "source": "npm:typescript-eslint",
     "target": "npm:eslint",
     "type": "static"
@@ -12647,6 +14157,26 @@
   {
     "source": "npm:uid",
     "target": "npm:@lukeed/csprng",
+    "type": "static"
+  },
+  {
+    "source": "npm:unbox-primitive",
+    "target": "npm:call-bound",
+    "type": "static"
+  },
+  {
+    "source": "npm:unbox-primitive",
+    "target": "npm:has-bigints",
+    "type": "static"
+  },
+  {
+    "source": "npm:unbox-primitive",
+    "target": "npm:has-symbols",
+    "type": "static"
+  },
+  {
+    "source": "npm:unbox-primitive",
+    "target": "npm:which-boxed-primitive",
     "type": "static"
   },
   {
@@ -13067,6 +14597,151 @@
   {
     "source": "npm:which",
     "target": "npm:isexe",
+    "type": "static"
+  },
+  {
+    "source": "npm:which-boxed-primitive",
+    "target": "npm:is-bigint",
+    "type": "static"
+  },
+  {
+    "source": "npm:which-boxed-primitive",
+    "target": "npm:is-boolean-object",
+    "type": "static"
+  },
+  {
+    "source": "npm:which-boxed-primitive",
+    "target": "npm:is-number-object",
+    "type": "static"
+  },
+  {
+    "source": "npm:which-boxed-primitive",
+    "target": "npm:is-string",
+    "type": "static"
+  },
+  {
+    "source": "npm:which-boxed-primitive",
+    "target": "npm:is-symbol",
+    "type": "static"
+  },
+  {
+    "source": "npm:which-builtin-type",
+    "target": "npm:call-bound",
+    "type": "static"
+  },
+  {
+    "source": "npm:which-builtin-type",
+    "target": "npm:function.prototype.name",
+    "type": "static"
+  },
+  {
+    "source": "npm:which-builtin-type",
+    "target": "npm:has-tostringtag",
+    "type": "static"
+  },
+  {
+    "source": "npm:which-builtin-type",
+    "target": "npm:is-async-function",
+    "type": "static"
+  },
+  {
+    "source": "npm:which-builtin-type",
+    "target": "npm:is-date-object",
+    "type": "static"
+  },
+  {
+    "source": "npm:which-builtin-type",
+    "target": "npm:is-finalizationregistry",
+    "type": "static"
+  },
+  {
+    "source": "npm:which-builtin-type",
+    "target": "npm:is-generator-function",
+    "type": "static"
+  },
+  {
+    "source": "npm:which-builtin-type",
+    "target": "npm:is-regex",
+    "type": "static"
+  },
+  {
+    "source": "npm:which-builtin-type",
+    "target": "npm:is-weakref",
+    "type": "static"
+  },
+  {
+    "source": "npm:which-builtin-type",
+    "target": "npm:isarray",
+    "type": "static"
+  },
+  {
+    "source": "npm:which-builtin-type",
+    "target": "npm:which-boxed-primitive",
+    "type": "static"
+  },
+  {
+    "source": "npm:which-builtin-type",
+    "target": "npm:which-collection",
+    "type": "static"
+  },
+  {
+    "source": "npm:which-builtin-type",
+    "target": "npm:which-typed-array",
+    "type": "static"
+  },
+  {
+    "source": "npm:which-collection",
+    "target": "npm:is-map",
+    "type": "static"
+  },
+  {
+    "source": "npm:which-collection",
+    "target": "npm:is-set",
+    "type": "static"
+  },
+  {
+    "source": "npm:which-collection",
+    "target": "npm:is-weakmap",
+    "type": "static"
+  },
+  {
+    "source": "npm:which-collection",
+    "target": "npm:is-weakset",
+    "type": "static"
+  },
+  {
+    "source": "npm:which-typed-array",
+    "target": "npm:available-typed-arrays",
+    "type": "static"
+  },
+  {
+    "source": "npm:which-typed-array",
+    "target": "npm:call-bind",
+    "type": "static"
+  },
+  {
+    "source": "npm:which-typed-array",
+    "target": "npm:call-bound",
+    "type": "static"
+  },
+  {
+    "source": "npm:which-typed-array",
+    "target": "npm:for-each",
+    "type": "static"
+  },
+  {
+    "source": "npm:which-typed-array",
+    "target": "npm:get-proto",
+    "type": "static"
+  },
+  {
+    "source": "npm:which-typed-array",
+    "target": "npm:gopd",
+    "type": "static"
+  },
+  {
+    "source": "npm:which-typed-array",
+    "target": "npm:has-tostringtag",
     "type": "static"
   },
   {
