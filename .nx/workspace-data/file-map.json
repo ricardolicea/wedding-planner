@@ -5,6 +5,213 @@
   "nxJsonPlugins": [],
   "fileMap": {
     "projectFileMap": {
+      "web": [
+        {
+          "file": "apps/web/.env.example",
+          "hash": "1254456578006850728"
+        },
+        {
+          "file": "apps/web/.gitignore",
+          "hash": "13046175384202504187"
+        },
+        {
+          "file": "apps/web/README.md",
+          "hash": "6529887400882112953"
+        },
+        {
+          "file": "apps/web/eslint.config.js",
+          "hash": "16942999842498204"
+        },
+        {
+          "file": "apps/web/index.html",
+          "hash": "11876666368797054984"
+        },
+        {
+          "file": "apps/web/package.json",
+          "hash": "12111265010159450029",
+          "deps": [
+            "npm:@eslint/js",
+            "npm:@tailwindcss/postcss",
+            "npm:@types/node@24.10.1",
+            "npm:@types/react",
+            "npm:@types/react-dom",
+            "npm:@vitejs/plugin-react",
+            "npm:autoprefixer",
+            "npm:eslint",
+            "npm:eslint-plugin-react-hooks",
+            "npm:eslint-plugin-react-refresh",
+            "npm:globals",
+            "npm:postcss",
+            "npm:tailwindcss",
+            "npm:typescript",
+            "npm:typescript-eslint",
+            "npm:vite",
+            "npm:@emotion/react",
+            "npm:@emotion/styled",
+            "npm:@mui/icons-material",
+            "npm:@mui/material",
+            "npm:@supabase/supabase-js",
+            "npm:react",
+            "npm:react-dom"
+          ]
+        },
+        {
+          "file": "apps/web/postcss.config.js",
+          "hash": "2989106593385399810"
+        },
+        {
+          "file": "apps/web/public/image-brindis.jpeg",
+          "hash": "8204437860445087494"
+        },
+        {
+          "file": "apps/web/public/vite.svg",
+          "hash": "16046085400642193116"
+        },
+        {
+          "file": "apps/web/public/work_in_progress.png",
+          "hash": "2110446106729157486"
+        },
+        {
+          "file": "apps/web/src/App.css",
+          "hash": "3739391659270974612"
+        },
+        {
+          "file": "apps/web/src/App.tsx",
+          "hash": "10779608883764376377"
+        },
+        {
+          "file": "apps/web/src/api/ApiError.ts",
+          "hash": "5915454378239595582"
+        },
+        {
+          "file": "apps/web/src/api/Guest.ts",
+          "hash": "8787771692818794339"
+        },
+        {
+          "file": "apps/web/src/api/Wedding.ts",
+          "hash": "9840497936745775668"
+        },
+        {
+          "file": "apps/web/src/api/adminApi.ts",
+          "hash": "3728665875197967310"
+        },
+        {
+          "file": "apps/web/src/api/createGuests.ts",
+          "hash": "3274201931255647641"
+        },
+        {
+          "file": "apps/web/src/api/editGuest.ts",
+          "hash": "4055794623099570613"
+        },
+        {
+          "file": "apps/web/src/api/getGuests.ts",
+          "hash": "17853878605023959141"
+        },
+        {
+          "file": "apps/web/src/api/getWeddings.ts",
+          "hash": "16567174684025315883"
+        },
+        {
+          "file": "apps/web/src/api/httpClient.ts",
+          "hash": "3574651023436813061"
+        },
+        {
+          "file": "apps/web/src/assets/image-waliking.jpeg",
+          "hash": "7604456464498000975"
+        },
+        {
+          "file": "apps/web/src/assets/react.svg",
+          "hash": "16069471864800376455"
+        },
+        {
+          "file": "apps/web/src/components/Modal.tsx",
+          "hash": "9715450078144649469"
+        },
+        {
+          "file": "apps/web/src/contexts/AuthContext.tsx",
+          "hash": "6139960403822196829"
+        },
+        {
+          "file": "apps/web/src/contexts/GuestContext.tsx",
+          "hash": "11150739172508402505"
+        },
+        {
+          "file": "apps/web/src/index.css",
+          "hash": "7073853273774893834"
+        },
+        {
+          "file": "apps/web/src/layout/AppLayout.tsx",
+          "hash": "5823825686180627087"
+        },
+        {
+          "file": "apps/web/src/layout/Sidebar.tsx",
+          "hash": "8428665537077446459"
+        },
+        {
+          "file": "apps/web/src/layout/Topbar.tsx",
+          "hash": "6093062642747745513"
+        },
+        {
+          "file": "apps/web/src/lib/supabaseClient.ts",
+          "hash": "7696121038631863404"
+        },
+        {
+          "file": "apps/web/src/main.tsx",
+          "hash": "10315165562480784588"
+        },
+        {
+          "file": "apps/web/src/pages/AuthPage.tsx",
+          "hash": "17805644367455582365"
+        },
+        {
+          "file": "apps/web/src/pages/BudgetPage.tsx",
+          "hash": "3092066022757286045"
+        },
+        {
+          "file": "apps/web/src/pages/CreateUserPage.tsx",
+          "hash": "14147510423099645537"
+        },
+        {
+          "file": "apps/web/src/pages/Dashboard.tsx",
+          "hash": "17951826679523719690"
+        },
+        {
+          "file": "apps/web/src/pages/EventsPage.tsx",
+          "hash": "7837808369744978905"
+        },
+        {
+          "file": "apps/web/src/pages/GuestPage.tsx",
+          "hash": "8716499759029352589"
+        },
+        {
+          "file": "apps/web/src/pages/SuppliersPage.tsx",
+          "hash": "8696947686036461004"
+        },
+        {
+          "file": "apps/web/src/pages/TasksPage.tsx",
+          "hash": "411660949065144179"
+        },
+        {
+          "file": "apps/web/tailwind.config.js",
+          "hash": "1136070076821179571"
+        },
+        {
+          "file": "apps/web/tsconfig.app.json",
+          "hash": "5465718486149434459"
+        },
+        {
+          "file": "apps/web/tsconfig.json",
+          "hash": "2365188958523842680"
+        },
+        {
+          "file": "apps/web/tsconfig.node.json",
+          "hash": "11862655124761714159"
+        },
+        {
+          "file": "apps/web/vite.config.ts",
+          "hash": "16225914092815047172"
+        }
+      ],
       "api": [
         {
           "file": "apps/api/.env.example",
@@ -99,7 +306,7 @@
         },
         {
           "file": "apps/api/src/guests/guests.controller.ts",
-          "hash": "7007882109704236311"
+          "hash": "13367504021962446617"
         },
         {
           "file": "apps/api/src/guests/guests.module.ts",
@@ -111,11 +318,11 @@
         },
         {
           "file": "apps/api/src/guests/guests.service.ts",
-          "hash": "9755968671241007071"
+          "hash": "14061648687184183238"
         },
         {
           "file": "apps/api/src/main.ts",
-          "hash": "14022905407326655936"
+          "hash": "18387191640544128196"
         },
         {
           "file": "apps/api/src/supabase/supabase-admin.service.ts",
@@ -151,7 +358,7 @@
         },
         {
           "file": "apps/api/src/weddings/weddings.service.ts",
-          "hash": "8761124062655076157"
+          "hash": "18274418438826916511"
         },
         {
           "file": "apps/api/test/app.e2e-spec.ts",
@@ -169,230 +376,6 @@
           "file": "apps/api/tsconfig.json",
           "hash": "13757859475919901779"
         }
-      ],
-      "web": [
-        {
-          "file": "apps/web/.env.example",
-          "hash": "1254456578006850728"
-        },
-        {
-          "file": "apps/web/.gitignore",
-          "hash": "13046175384202504187"
-        },
-        {
-          "file": "apps/web/README.md",
-          "hash": "6529887400882112953"
-        },
-        {
-          "file": "apps/web/eslint.config.js",
-          "hash": "16942999842498204"
-        },
-        {
-          "file": "apps/web/index.html",
-          "hash": "12552562825985743627"
-        },
-        {
-          "file": "apps/web/package.json",
-          "hash": "12111265010159450029",
-          "deps": [
-            "npm:@eslint/js",
-            "npm:@tailwindcss/postcss",
-            "npm:@types/node@24.10.1",
-            "npm:@types/react",
-            "npm:@types/react-dom",
-            "npm:@vitejs/plugin-react",
-            "npm:autoprefixer",
-            "npm:eslint",
-            "npm:eslint-plugin-react-hooks",
-            "npm:eslint-plugin-react-refresh",
-            "npm:globals",
-            "npm:postcss",
-            "npm:tailwindcss",
-            "npm:typescript",
-            "npm:typescript-eslint",
-            "npm:vite",
-            "npm:@emotion/react",
-            "npm:@emotion/styled",
-            "npm:@mui/icons-material",
-            "npm:@mui/material",
-            "npm:@supabase/supabase-js",
-            "npm:react",
-            "npm:react-dom"
-          ]
-        },
-        {
-          "file": "apps/web/postcss.config.js",
-          "hash": "2989106593385399810"
-        },
-        {
-          "file": "apps/web/public/vite.svg",
-          "hash": "16046085400642193116"
-        },
-        {
-          "file": "apps/web/src/App.css",
-          "hash": "3739391659270974612"
-        },
-        {
-          "file": "apps/web/src/App.tsx",
-          "hash": "10743772148800292186"
-        },
-        {
-          "file": "apps/web/src/api/Guest.ts",
-          "hash": "8787771692818794339"
-        },
-        {
-          "file": "apps/web/src/api/Wedding.ts",
-          "hash": "9840497936745775668"
-        },
-        {
-          "file": "apps/web/src/api/adminApi.ts",
-          "hash": "3728665875197967310"
-        },
-        {
-          "file": "apps/web/src/api/createGuests.ts",
-          "hash": "2228184270241896327"
-        },
-        {
-          "file": "apps/web/src/api/getGuests.ts",
-          "hash": "17853878605023959141"
-        },
-        {
-          "file": "apps/web/src/api/getWeddings.ts",
-          "hash": "16567174684025315883"
-        },
-        {
-          "file": "apps/web/src/api/httpClient.ts",
-          "hash": "16869608217906531145"
-        },
-        {
-          "file": "apps/web/src/assets/image-brindis.jpeg",
-          "hash": "8204437860445087494"
-        },
-        {
-          "file": "apps/web/src/assets/image-waliking.jpeg",
-          "hash": "7604456464498000975"
-        },
-        {
-          "file": "apps/web/src/assets/react.svg",
-          "hash": "16069471864800376455"
-        },
-        {
-          "file": "apps/web/src/components/Modal.tsx",
-          "hash": "2668156209898124788"
-        },
-        {
-          "file": "apps/web/src/contexts/AuthContext.tsx",
-          "hash": "7147948436650169053"
-        },
-        {
-          "file": "apps/web/src/contexts/GuestContext.tsx",
-          "hash": "11072668188097554557"
-        },
-        {
-          "file": "apps/web/src/index.css",
-          "hash": "7073853273774893834"
-        },
-        {
-          "file": "apps/web/src/layout/AppLayout.tsx",
-          "hash": "9185504908807931370"
-        },
-        {
-          "file": "apps/web/src/layout/Sidebar.tsx",
-          "hash": "28969888314531469"
-        },
-        {
-          "file": "apps/web/src/layout/Topbar.tsx",
-          "hash": "342709615666386332"
-        },
-        {
-          "file": "apps/web/src/lib/supabaseClient.ts",
-          "hash": "7696121038631863404"
-        },
-        {
-          "file": "apps/web/src/main.tsx",
-          "hash": "10315165562480784588"
-        },
-        {
-          "file": "apps/web/src/pages/AuthPage.tsx",
-          "hash": "2192177830776631229"
-        },
-        {
-          "file": "apps/web/src/pages/CreateUserPage.tsx",
-          "hash": "8511507245278712263"
-        },
-        {
-          "file": "apps/web/src/pages/Dashboard.tsx",
-          "hash": "2812169467289780564"
-        },
-        {
-          "file": "apps/web/src/pages/GuestPage.tsx",
-          "hash": "4038627907996568719"
-        },
-        {
-          "file": "apps/web/tailwind.config.js",
-          "hash": "1136070076821179571"
-        },
-        {
-          "file": "apps/web/tsconfig.app.json",
-          "hash": "5465718486149434459"
-        },
-        {
-          "file": "apps/web/tsconfig.json",
-          "hash": "2365188958523842680"
-        },
-        {
-          "file": "apps/web/tsconfig.node.json",
-          "hash": "11862655124761714159"
-        },
-        {
-          "file": "apps/web/vite.config.ts",
-          "hash": "16225914092815047172"
-        }
-      ],
-      "prismadb": [
-        {
-          "file": "apps/prismadb/.gitignore",
-          "hash": "11424931467845557677"
-        },
-        {
-          "file": "apps/prismadb/package.json",
-          "hash": "5946041540169606590",
-          "deps": [
-            "npm:@types/node",
-            "npm:dotenv",
-            "npm:prisma@5.22.0",
-            "npm:@prisma/client@5.22.0",
-            "npm:pg"
-          ]
-        },
-        {
-          "file": "apps/prismadb/prisma/dev.db",
-          "hash": "14028793277134898007"
-        },
-        {
-          "file": "apps/prismadb/prisma/dev.db-journal",
-          "hash": "3246952544405801788"
-        },
-        {
-          "file": "apps/prismadb/prisma/migrations/20251202183412_first_prisma_migration/migration.sql",
-          "hash": "14758621558831232880"
-        },
-        {
-          "file": "apps/prismadb/prisma/migrations/migration_lock.toml",
-          "hash": "10997593172930738585"
-        },
-        {
-          "file": "apps/prismadb/prisma/schema.prisma",
-          "hash": "9362095696505819767"
-        },
-        {
-          "file": "apps/prismadb/test-connection.js",
-          "hash": "16887732765083365534"
-        },
-        {
-          "file": "apps/prismadb/tsconfig.json",
-          "hash": "10307285772026314218"
-        }
       ]
     },
     "nonProjectFiles": [
@@ -409,18 +392,18 @@
         "hash": "2431873673864141239"
       },
       {
-        "file": "apps/indext.ts",
-        "hash": "14063648577057935293"
+        "file": "eslint.config.mts",
+        "hash": "114823560367270872"
       },
       {
         "file": "package-lock.json",
-        "hash": "13609329950306142657"
+        "hash": "6739653194206953118"
       },
       {
         "file": "package.json",
-        "hash": "6108357314449303126"
+        "hash": "10736118172686266572"
       }
     ]
   },
-  "externalNodesHash": "11454722488689590551"
+  "externalNodesHash": "10246934120119404806"
 }
